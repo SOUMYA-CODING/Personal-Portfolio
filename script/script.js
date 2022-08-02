@@ -140,3 +140,9 @@ particlesJS("particles-js", {
     },
     retina_detect: true
 });
+
+// Light Dark Mode
+/*
+function light_dark_mode(){
+    let obj = Document.getElementById("light_dark");
+}*/

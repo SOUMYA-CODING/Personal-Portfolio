@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover" />
     <meta name="description"
-        content="Soumya Prakash Sahu Personal Portfolio | Full Stack Developerr | Web Development | App Development | Backend Development" />
+        content="Soumya Prakash Sahu Personal Portfolio | Full Stack Developer | Web Development | App Development | Backend Development" />
     <meta name="robots" content="index, archive" />
+    <link type="text/plain" rel="author" href="humans.txt">
 
     <title>SOUMYA PRAKASH SAHU</title>
 
@@ -93,7 +94,7 @@
                                 <a class="nav-link" href="#contact-page">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact-page"><i class="fa-solid fa-moon"></i></a>
+                                <a class="nav-link" href="" id="light_dark" onclick="light_dark_mode()"><i class="fa-solid fa-sun"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -102,7 +103,7 @@
         </header>
 
         <div class="home_page_wrapper container">
-            <section>
+            <section data-aos="fade-right">
                 <h4><strong>Hello!</strong> &nbsp; I'am,<br> SOUMYA PRAKASH SAHU.</h4>
                 <h1>
                     <strong>- <span class="auto-input"></span></strong>
@@ -139,10 +140,10 @@
     <div id="about-page">
         <div class="about_page_wrapper container">
             <div class="row">
-                <div class="col d-flex justify-content-center">
+                <div class="col d-flex justify-content-center" data-aos="fade-right">
                     <img src="assets/base-assets/profile_img.png" alt="" class="profile-img">
                 </div>
-                <div class="col d-flex justify-content-center align-items-start flex-column">
+                <div class="col d-flex justify-content-center align-items-start flex-column" data-aos="fade-left">
                     <h3 class="section-header">About Me <span>About Me</span></h3>
                     <p class="mt-5 about-desc">
                         Hello!, My name is Soumya, a <span class="highlight">Full Stack Developer</span> and i enjoy
@@ -165,8 +166,8 @@
     <!-- Skill Page -->
     <div id="skills-page">
         <div class="skill_page_wrapper container">
-            <h3 class="section-header text-center">Skills <span>Skills</span></h3>
-            <div class="d-flex flex-wrap mt-5 justify-content-center">
+            <h3 class="section-header text-center" data-aos="fade-right">Skills <span>Skills</span></h3>
+            <div class="d-flex flex-wrap mt-5 justify-content-center" data-aos="flip-left">
                 <div class="skill-card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
                     <p>Java</p>
@@ -256,12 +257,12 @@
     <!-- Project Page -->
     <div id="projects-page">
         <div class="project_page_wrapper container">
-            <h3 class="section-header">Recent Projects <span>Recent Projects</span></h3>
+            <h3 class="section-header" data-aos="fade-right">Recent Projects <span>Recent Projects</span></h3>
 
             <!-- 1st Project -->
             <div class="row">
                 <div class="col">
-                    <div class="project-card">
+                    <div class="project-card" data-aos="fade-right">
                         <img src="assets/project-assets/hotel_booking.png" class="card-img" alt="">
                         <div class="card-img-overlay d-flex align-items-start flex-column">
                             <div class="project-card-body container mt-auto">
@@ -286,7 +287,7 @@
             <!-- 2nd Project -->
             <div class="row">
                 <div class="col">
-                    <div class="project-card ms-auto">
+                    <div class="project-card ms-auto" data-aos="fade-left">
                         <img src="assets/project-assets/coffee_wala.png" class="card-img" alt="">
                         <div class="card-img-overlay d-flex align-items-end flex-row-reverse">
                             <div class="project-card-body desc-odd mt-auto">
@@ -335,9 +336,9 @@
 
     <!-- Contact Page -->
     <div id="contact-page">
-        <div class="contact_page_wrapper container">
-            <h3 class="section-header text-center">Contact Me <span>Contact Me</span></h3>
-            <form autocomplete="off" class="mt-5" onsubmit="return formvalidation()">
+        <div class="contact_page_wrapper container"> 
+            <h3 class="section-header text-center" data-aos="fade-right">Contact Me <span>Contact Me</span></h3>
+            <form autocomplete="off" class="mt-5" onsubmit="return formvalidation()" data-aos="fade-right">
                 <h2>Let's get in touch.</h2>
                 <p class="mb-3">If you would like to discuss any project or inquire, feel free to drop me a message.
                 </p>
@@ -378,7 +379,7 @@
                         src="assets/base-assets/coffee.png" alt="" class="coffee-img-2"></a>
             </section>
         </div>
-        &copy; 2022 Built and design by &nbsp; <a href="" target="_blank">Soumya Prakash Sahu</a>
+        &copy; 2022 Built and design by &nbsp; <a href="humans.txt">Soumya Prakash Sahu</a>
     </footer>
 
     <!-- Bootstrap 5.1 JavaScript CDN Link -->

@@ -112,7 +112,7 @@ a {
 #scroll-btn {
     display: none;
     position: fixed;
-    bottom: 4rem;
+    bottom: 3.5rem;
     right: 30px;
     z-index: 1000;
     border: none;
@@ -120,7 +120,7 @@ a {
     color: white;
     cursor: pointer;
     border-radius: 2px;
-    font-size: 18px;
+    font-size: 12px;
     transition: 0.5s;
     padding: 10px 15px;
 }
