@@ -58,7 +58,7 @@
                         src="assets/base-assets/coffee.png" alt="" class="coffee-img"></a>
             </section>
         </div>
-    </div>
+    </div> 
 
     <!-- Home Page -->
     <div id="home-page">
@@ -94,7 +94,8 @@
                                 <a class="nav-link" href="#contact-page">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="" id="light_dark" onclick="light_dark_mode()"><i class="fa-solid fa-sun"></i></a>
+                                <a class="nav-link" href="" id="light_dark" onclick="light_dark_mode()"><i
+                                        class="fa-solid fa-sun"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -139,27 +140,25 @@
     <!-- About Page -->
     <div id="about-page">
         <div class="about_page_wrapper container">
-            <div class="row">
-                <div class="col d-flex justify-content-center" data-aos="fade-right">
-                    <img src="assets/base-assets/profile_img.png" alt="" class="profile-img">
+            <section data-aos="fade-right">
+                <img src="assets/base-assets/profile_img.png" alt="" class="profile-img">
+            </section>
+            <section data-aos="fade-right">
+                <h3 class="section-header">About Me <span>About Me</span></h3>
+                <p class="mt-5 about-desc">
+                    Hello!, My name is Soumya, a <span class="highlight">Full Stack Developer</span> and i enjoy
+                    creating things that live on internet.
+                    <br><br>
+                    I like <span class="highlight">challenges</span>, problem solving, create smart user interface
+                    designs, developing rich <span class="highlight">mobile and web applications</span>. My main
+                    focus these days is bulding accessible, inclusive products.
+                </p>
+                <div class="btn-group mt-4">
+                    <a href="#contact-page" class="btn me-2" id="custome-btn">Hire Me</a>
+                    <a href="https://drive.google.com/file/d/19qY_x3k_c3bSmdEfViQYVtLjA0noPiT_/view?usp=sharing"
+                        target="_blank" class="btn" id="custome-btn-2">Resume</a>
                 </div>
-                <div class="col d-flex justify-content-center align-items-start flex-column" data-aos="fade-left">
-                    <h3 class="section-header">About Me <span>About Me</span></h3>
-                    <p class="mt-5 about-desc">
-                        Hello!, My name is Soumya, a <span class="highlight">Full Stack Developer</span> and i enjoy
-                        creating things that live on internet.
-                        <br><br>
-                        I like <span class="highlight">challenges</span>, problem solving, create smart user interface
-                        designs, developing rich <span class="highlight">mobile and web applications</span>. My main
-                        focus these days is bulding accessible, inclusive products.
-                    </p>
-                    <div class="btn-group mt-4">
-                        <a href="#contact-page" class="btn me-2" id="custome-btn">Hire Me</a>
-                        <a href="https://drive.google.com/file/d/19qY_x3k_c3bSmdEfViQYVtLjA0noPiT_/view?usp=sharing"
-                            target="_blank" class="btn" id="custome-btn-2">Resume</a>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
     </div>
 
@@ -259,7 +258,7 @@
         <div class="project_page_wrapper container">
             <h3 class="section-header" data-aos="fade-right">Recent Projects <span>Recent Projects</span></h3>
 
-            <!-- 1st Project -->
+    
             <div class="row">
                 <div class="col">
                     <div class="project-card" data-aos="fade-right">
@@ -284,10 +283,10 @@
                 </div>
             </div>
 
-            <!-- 2nd Project -->
+         
             <div class="row">
                 <div class="col">
-                    <div class="project-card ms-auto" data-aos="fade-left">
+                    <div class="project-card ms-auto" data-aos="fade-right">
                         <img src="assets/project-assets/coffee_wala.png" class="card-img" alt="">
                         <div class="card-img-overlay d-flex align-items-end flex-row-reverse">
                             <div class="project-card-body desc-odd mt-auto">
@@ -336,7 +335,7 @@
 
     <!-- Contact Page -->
     <div id="contact-page">
-        <div class="contact_page_wrapper container"> 
+        <div class="contact_page_wrapper container">
             <h3 class="section-header text-center" data-aos="fade-right">Contact Me <span>Contact Me</span></h3>
             <form autocomplete="off" class="mt-5" onsubmit="return formvalidation()" data-aos="fade-right">
                 <h2>Let's get in touch.</h2>

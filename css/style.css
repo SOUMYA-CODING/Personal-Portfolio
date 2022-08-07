@@ -457,7 +457,15 @@ a {
 }
 
 .about_page_wrapper {
-    padding: 9rem 0;
+    padding: 7rem 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_page_wrapper section{
+    width: 50%;
 }
 
 .about_page_wrapper .profile-img {
