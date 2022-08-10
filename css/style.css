@@ -179,6 +179,11 @@ a {
     width: 1.3rem;
 }
 
+.text-highlight {
+    color: #FF416C;
+    text-transform: uppercase;
+}
+
 
 /* ---- Home Page ---- */
 #home-page {
@@ -464,7 +469,7 @@ a {
     align-items: center;
 }
 
-.about_page_wrapper section{
+.about_page_wrapper section {
     width: 50%;
 }
 
@@ -674,28 +679,54 @@ a {
 
 
 /* ---- Project Page ---- */
-#project-page{
-    width: 100%;
-    height: 100%;
+#project-page {
     background-color: #1C1D25;
 }
 
-.project-container .image-section{
+.project_wrapper {
+    padding: 2rem 0;
+}
+
+.project_wrapper .image-section {
     width: 100%;
     height: 85%;
 }
 
-.project-container .image-section img{
+.project_wrapper .image-section img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
 
-.project-container .project-header-desc{
-    text-align: center;
+.project_wrapper .project-header-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: #fff;
 }
 
-.project-container .project-header-desc h1{
+.project_wrapper .project-header-desc h1 {
     font-size: 50px;
+}
+
+.project_wrapper .project-header-desc p {
+    text-align: justify;
+    letter-spacing: 1px;
+    width: 50%;
+}
+
+.project_wrapper .project-role {
+    color: #fff;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project_wrapper .project-role p {
+    text-align: justify;
+    letter-spacing: 1px;
+    width: 50%;
 }
