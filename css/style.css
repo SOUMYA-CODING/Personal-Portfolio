@@ -501,6 +501,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .skill_page_wrapper .skill-card img {
@@ -669,4 +670,32 @@ a {
 .footer a:hover {
     color: #FF4B2B;
     text-decoration: underline;
+}
+
+
+/* ---- Project Page ---- */
+#project-page{
+    width: 100%;
+    height: 100%;
+    background-color: #1C1D25;
+}
+
+.project-container .image-section{
+    width: 100%;
+    height: 85%;
+}
+
+.project-container .image-section img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.project-container .project-header-desc{
+    text-align: center;
+    color: #fff;
+}
+
+.project-container .project-header-desc h1{
+    font-size: 50px;
 }
