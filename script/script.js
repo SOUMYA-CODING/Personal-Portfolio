@@ -142,6 +142,7 @@ particlesJS("particles-js", {
 });
 
 // Light Dark Mode
+let mode = true
 /*
 function light_dark_mode(){
     let obj = Document.getElementById("light_dark");
