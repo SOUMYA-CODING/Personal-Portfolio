@@ -687,78 +687,45 @@ a {
     padding: 2rem 0;
 }
 
-.project_wrapper .image-section {
-    width: 100%;
-    height: 650px;
-    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .7)), url('../assets/project-assets/guest_house-1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    color: #fff;
-}
-
-.project_wrapper .image-section h1 {
-    font-size: 65px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.project_wrapper .project-description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
-    margin-top: 5rem;
-}
-
-.project_wrapper .project-description h1 {
-    font-size: 55px;
-}
-
-.project_wrapper .project-description p {
-    text-align: justify;
-    letter-spacing: 1px;
-    width: 60%;
-}
-
-.project_wrapper .project-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
-    margin-top: 5rem;
-}
-
-.project_wrapper .project-images .project-banner {
-    width: 100%;
-    height: auto;
-}
-
-.project_wrapper .project-images .project-banner img {
-    width: 100%;
-}
-
-.project_wrapper .next-project-link a {
+.project-description-body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    text-decoration: none;
 }
 
-.project_wrapper .next-project-link p {
-    color: #FF4B2B;
-}
-
-.project_wrapper .next-project-link h2 {
+.project_wrapper .project-head {
     color: #fff;
-    font-size: 45px;
+}
+
+.project_wrapper .project-title {
+    color: #fff;
+    font-style: italic;
+}
+
+.project_wrapper .project-description {
+    color: #fff;
+}
+
+.project_wrapper .project-description-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project_wrapper .project-description-one section {
+    margin: 10px;
+    width: 50%;
+}
+
+.project_wrapper .project-description-one section:nth-child(2) img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.project_wrapper .project-description-two {
+    background-color: aliceblue;
+}
+
+.project_wrapper .project-images{
+    
 }
