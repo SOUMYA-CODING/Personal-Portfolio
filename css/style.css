@@ -725,7 +725,13 @@ a {
 .project_wrapper .project-description-two {
     background-color: aliceblue;
 }
-
-.project_wrapper .project-images{
-    
+.project_wrapper .project-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project_wrapper .project-images .laptop svg {
+    width: 100%;
+    height: 100%;
 }
