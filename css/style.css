@@ -722,16 +722,23 @@ a {
     cursor: pointer;
 }
 
+.project_wrapper .project-description-one section:nth-child(2) img:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
 .project_wrapper .project-description-two {
     background-color: aliceblue;
 }
+
 .project_wrapper .project-images {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.project_wrapper .project-images .laptop svg {
+
+.project_wrapper .project-images img {
     width: 100%;
     height: 100%;
 }
