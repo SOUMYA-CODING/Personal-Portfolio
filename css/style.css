@@ -725,22 +725,7 @@ a {
 .project_wrapper .project-description p {
     text-align: justify;
     letter-spacing: 1px;
-    width: 50%;
-}
-
-.project_wrapper .project-role {
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 5rem;
-}
-
-.project_wrapper .project-role p {
-    text-align: justify;
-    letter-spacing: 1px;
-    width: 50%;
+    width: 60%;
 }
 
 .project_wrapper .project-images {
@@ -759,4 +744,21 @@ a {
 
 .project_wrapper .project-images .project-banner img {
     width: 100%;
+}
+
+.project_wrapper .next-project-link a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.project_wrapper .next-project-link p {
+    color: #FF4B2B;
+}
+
+.project_wrapper .next-project-link h2 {
+    color: #fff;
+    font-size: 45px;
 }
