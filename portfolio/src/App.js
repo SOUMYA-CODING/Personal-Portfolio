@@ -1,8 +1,25 @@
-import React from "react";
+import React from 'react'
+
+import "./style/style.scss"
+import "./style/responsive-style.scss"
+
+import Socialicons from './components/Socialicons'
+import Header from './components/Header'
+import Home from './components/Home'
+import About from './components/About'
+import Skill from './components/Skill'
+import Project from './components/Project'
 
 const App = () => {
     return (
-        <h1>Hello</h1>
+        <main>
+            <Socialicons />
+            <Header />
+            <Home />
+            <About />
+            <Skill />
+            <Project />
+        </main>
     );
 }
 
