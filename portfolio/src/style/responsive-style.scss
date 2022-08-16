@@ -45,4 +45,24 @@
             }
         }
     }
+
+    /* ---- Skill Page ---- */
+    #skill-page {
+        height: auto;
+    }
+
+    .skill-page-wrapper {
+        height: 100%;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+
+        section {
+            flex-direction: column;
+        }
+
+        .skill-card {
+            margin: 10px 0 10px 0;
+            width: 20rem;
+        }
+    }
 }

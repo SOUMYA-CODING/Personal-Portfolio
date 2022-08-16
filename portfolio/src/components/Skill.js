@@ -1,6 +1,16 @@
 import React from 'react'
+import SkillCard from '../cards/SkillCard'
+import SkillData from '../data/SkillData'
 
 const Skill = () => {
+    const data = SkillData.map(list => {
+        return <SkillCard
+            id={list.id}
+            icon={list.icon}
+            title={list.title}
+            language={list.language}
+        />
+    })
     return (
         <section id="skill-page">
             <div className="skill-page-wrapper container">
@@ -9,34 +19,7 @@ const Skill = () => {
                 </h3>
 
                 <section className='my-5'>
-                    <div className="skill-card">
-                        <div className="skill-card-body">
-                            <i className="uil uil-brackets-curly"></i>
-                            <h3>Frontend</h3>
-                            <p>Flutter, Kotlin, HTML, CSS, Bootstrap, JavaScript, React</p>
-                        </div>
-                    </div>
-                    <div className="skill-card">
-                        <div className="skill-card-body">
-                            <i className="uil uil-database"></i>
-                            <h3>Backend</h3>
-                            <p>Django, PHP, MySQL, Firebase, SQLite</p>
-                        </div>
-                    </div>
-                    <div className="skill-card">
-                        <div className="skill-card-body">
-                            <i className="uil uil-palette"></i>
-                            <h3>Design</h3>
-                            <p>Figma, Adobe XD</p>
-                        </div>
-                    </div>
-                    <div className="skill-card">
-                        <div className="skill-card-body">
-                            <i class="uil uil-code-branch"></i>
-                            <h3>Others</h3>
-                            <p>Git, Linux, Android Studio, VS Code</p>
-                        </div>
-                    </div>
+                    {data}
                 </section>
             </div>
         </section>

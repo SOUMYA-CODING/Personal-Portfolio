@@ -49,6 +49,7 @@
 
     /* ---- For Skill Card Color ---- */
     --skill-card-background-color: var(--color-6);
+    --skill-card-hover-color: var(--color-13);
 }
 
 * {
@@ -501,7 +502,6 @@
     .skill-card {
         margin: 0 10px 0 10px;
         width: 18rem;
-        height: 22rem;
         background-color: var(--skill-card-background-color);
         padding: 2rem;
         cursor: pointer;
@@ -510,7 +510,7 @@
             padding-top: 4.5rem;
 
             h3 {
-                margin-top: 1.5rem;
+                margin-top: 1.3rem;
             }
 
             p {
@@ -518,8 +518,18 @@
             }
 
             .uil {
-                font-size: 35px;
+                font-size: 40px;
                 color: var(--color-16);
+            }
+
+        }
+
+        &:hover {
+            background-color: var(--skill-card-hover-color);
+            color: var(--text-color);
+
+            .uil {
+                color: var(--text-color);
             }
         }
     }
