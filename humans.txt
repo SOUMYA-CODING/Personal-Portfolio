@@ -33,5 +33,7 @@ ___________           .__                  .__
 
 - HTML5
 - CSS3
+- Sass
 - Boostrap 5.1
-- JavaScript    
+- JavaScript
+- React    
