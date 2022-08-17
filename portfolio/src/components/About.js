@@ -9,7 +9,7 @@ const About = () => {
                 </section>
                 <section>
                     <h3 className="header-title">
-                        About me
+                        About me.
                     </h3>
                     <p className="my-4">
                         Hello!, I am Soumya Prakash Sahu, a <span className="text-highlight">Full Stack Web and Android App Developer</span>,
