@@ -1,8 +1,14 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const Header = () => {
     return (
-        <section className="header-wrapper">
+        <motion.section
+            initial={{ y: -300, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3, duration: 1.3, type: 'tween' }}
+
+            className="header-wrapper">
             <nav className="navbar navbar-expand-lg fixed-top">
                 <div className="container">
                     {/* ----- Website Logo ----- */}
@@ -119,7 +125,7 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-        </section>
+        </motion.section>
     );
 }
 

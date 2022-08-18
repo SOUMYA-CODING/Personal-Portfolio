@@ -1,9 +1,15 @@
 import React from 'react'
-import { useEffect } from 'react'
+import { motion } from 'framer-motion'
+
 const Home = () => {
 
     return (
-        <section id="home-page">
+        <motion.section
+            initial={{ y: -1000, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3, duration: 1.3, type: 'tween', ease: [0.17, 0.63, 0.53, 0.67], /*yoyo: 10*/ }}
+
+            id="home-page">
             <div className="home-page-wrapper container">
                 <section>
                     <h3>Hello! there I'am,</h3>
@@ -34,7 +40,7 @@ const Home = () => {
                     </div>
                 </section>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

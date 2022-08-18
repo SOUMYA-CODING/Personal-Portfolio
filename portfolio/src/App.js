@@ -3,6 +3,8 @@ import React from 'react'
 import "./style/style.scss"
 import "./style/responsive-style.scss"
 
+//import Loader from './components/Loader'
+import ScrollToTop from './components/ScrollToTop'
 import Socialicons from './components/Socialicons'
 import Header from './components/Header'
 import Home from './components/Home'
@@ -15,6 +17,7 @@ import Footer from './components/Footer'
 const App = () => {
     return (
         <main>
+            <ScrollToTop />
             <Socialicons />
             <Header />
             <Home />
