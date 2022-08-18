@@ -104,11 +104,13 @@ const Header = () => {
                             <li className="nav-item">
                                 <a className="nav-link" href="#project-page">Projects</a>
                             </li>
+                            {/**
                             <li className="nav-item">
                                 <a className="nav-link" href="#blog-page">Blog</a>
                             </li>
+                             */}
                             <li className="nav-item">
-                                <a className="nav-link" href="#contact">Contact</a>
+                                <a className="nav-link" href="#contact-page">Contact</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link"><i className="fa-solid fa-sun"></i></a>

@@ -1,6 +1,7 @@
 import React from 'react'
-
+import { useEffect } from 'react'
 const Home = () => {
+
     return (
         <section id="home-page">
             <div className="home-page-wrapper container">

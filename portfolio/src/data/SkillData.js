@@ -3,7 +3,7 @@ export default [
         id: "1",
         icon: <i class="uil uil-brackets-curly"></i>,
         title: "Frontend",
-        language: "Flutter, Kotlin, HTML, CSS, Bootstrap, JavaScript, React",
+        language: "Flutter, Kotlin, HTML, CSS, SASS, Bootstrap, JavaScript, React",
     },
     {
         id: "2",
