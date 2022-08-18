@@ -7,7 +7,7 @@ const Home = () => {
         <motion.section
             initial={{ y: -1000, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3, duration: 1.3, type: 'tween', ease: [0.17, 0.63, 0.53, 0.67], /*yoyo: 10*/ }}
+            transition={{ delay: 0.3, duration: 1.3, type: 'tween', ease: "easeInOut", /*yoyo: 10*/ }}
 
             id="home-page">
             <div className="home-page-wrapper container">

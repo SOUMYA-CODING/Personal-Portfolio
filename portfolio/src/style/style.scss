@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap');
 
-/* ---- Custom Color ---- */
+/* ======= Custom Color ======= */
 :root {
     --color-1: #1C1D25;
     --color-2: #111;
@@ -20,47 +20,106 @@
     --color-16: #4169E1;
     --color-17: #141E30;
     --color-18: #243B55;
+    --color-19: #4C4F65;
+    --color-20: #EBEBEB;
 }
 
-/* ---- Dark Mode ---- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ======== Dark Mode ======= */
 .dark-mode {
-    /* ---- Background Color ---- */
+    /* ======= Background Color ======= */
     --background-color: var(--color-1);
     background-color: var(--background-color);
 
-    /* ---- Text Color ---- */
+    /* ======= Text Color ======= */
     --text-color: var(--color-3);
 
-    /* ---- Header Title Color ---- */
+    /* ======= Header Title Color ======= */
     --header-title-color: var(--color-11);
 
-    /* ---- Text Highlight Color ---- */
+    /* ======= Text Highlight Color ======= */
     --text-highlight-color: var(--color-13);
 
-    /* ---- For Navbar Color ---- */
+    /* ======= For Navbar Color ======= */
     --navbar-text-color: var(--color-6);
     --navbar-svg-color: var(--color-4);
     --navbar-hover-color: var(--color-13);
     --navbar-shadow-color: rgba(28, 29, 37, 0.9);
 
-    /* ---- For Button Color ---- */
+    /* ======= For Home Color ======= */
+    --home-text-color: var(--text-color);
+
+    /* ======= For Button Color ======= */
     --button-color: var(--color-4);
     --button-text-color: var(--color-3);
     --button-graident-color: var(--color-5);
     --button-hover-color: var(--color-15);
 
 
-    /* ---- For Skill Card Color ---- */
+    /* ======= For Skill Card Color ======= */
     --skill-card-background-color: var(--color-11);
     --skill-card-hover-color: var(--color-13);
 
-    /* ---- For Project Card Color ---- */
+    /* ======= For Project Card Color ======= */
     --project-card-background-color: var(--color-17);
     --project-card-hover-color: var(--color-18);
     --project-text-color: var(--color-3);
 
-    /* ---- For Form Color ---- */
+    /* ======= For Form Color ======= */
     --form-text-color: var(--color-14);
+
+    /* ======= For Mouse Color ======= */
+    --mouse-color: var(--text-color);
+}
+
+/* ======= light Mode ======= */
+.light-mode {
+    /* ======= Background Color ======= */
+    --background-color: var(--color-20);
+    background-color: var(--background-color);
+
+    /* ======= Text Color ======= */
+    --text-color: var(--color-19);
+
+    /* ======= Header Title Color ======= */
+    --header-title-color: var(--color-11);
+
+    /* ======= Text Highlight Color ======= */
+    --text-highlight-color: var(--color-13);
+
+    /* ======= For Navbar Color ======= */
+    --navbar-text-color: var(--color-19);
+    --navbar-svg-color: var(--color-4);
+    --navbar-hover-color: var(--color-13);
+    --navbar-shadow-color: rgba(235, 235, 235, 0.9);
+
+    /* ======= For Home Color ======= */
+    --home-text-color: var(--color-19);
+
+    /* ======= For Button Color ======= */
+    --button-color: var(--color-4);
+    --button-text-color: var(--color-3);
+    --button-graident-color: var(--color-5);
+    --button-hover-color: var(--color-15);
+
+    /* ======= For Skill Card Color ======= */
+    --skill-card-background-color: var(--color-17);
+    --skill-card-hover-color: var(--color-13);
+    --skill-text-color: var(--color-3);
+
+    /* ======= For Project Card Color ======= */
+    --project-card-background-color: var(--color-17);
+    --project-card-hover-color: var(--color-18);
+    --project-text-color: var(--color-11);
+
+    /* ======= For Form Color ======= */
+    --form-text-color: var(--color-14);
+
+    /* ======= For Mouse Color ======= */
+    --mouse-color: var(--color-19);
 }
 
 * {
@@ -70,7 +129,7 @@
     font-family: 'League Spartan', sans-serif;
 }
 
-/* ---- Common ---- */
+/* ======= Common ======= */
 .social-link {
     position: fixed;
     left: 3rem;
@@ -88,13 +147,13 @@
             margin: -12.7rem -0.9rem;
 
             a {
-                color: var(--text-color);
+                color: var(--home-text-color);
                 font-size: 1.6rem;
                 margin: 2rem 0;
             }
 
-            .coffee-img:hover,
             i:hover {
+                color: var(--button-color);
                 transform: scale(1.05);
             }
         }
@@ -130,8 +189,8 @@
         color: var(--text-color);
         font-size: 18px;
         background: var(--button-color);
-        background: -webkit-linear-gradient(to right, var(--button-graident-color), var(--button-color));
-        background: linear-gradient(to left, var(--button-graident-color), var(--button-color));
+        background: -webkit-linear-gradient(30deg, var(--button-graident-color), var(--button-color));
+        background: linear-gradient(30deg, var(--button-graident-color), var(--button-color));
         border-radius: 3px;
     }
 
@@ -140,7 +199,7 @@
     }
 }
 
-/* ---- Header ---- */
+/* ======= Header ======= */
 .header-wrapper {
     width: 100%;
 }
@@ -190,19 +249,11 @@
     }
 }
 
-.navbar-brand {
-    svg {
-        width: 60px;
-
-        &:hover rect,
-        &:hover g path {
-            fill: var(--navbar-hover-color);
-            transition: ease-out 0.5s;
-        }
-    }
+.navbar-brand img {
+    width: 60px;
 }
 
-/* ---- Home Page ---- */
+/* ======= Home Page ======= */
 #home-page {
     width: 100%;
     height: 100vh;
@@ -214,7 +265,7 @@
     justify-content: center;
     align-items: center;
     padding: 0 11rem;
-    color: var(--text-color);
+    color: var(--home-text-color);
     letter-spacing: 1px;
 
     h1 {
@@ -260,10 +311,16 @@
             color: var(--text-color);
             box-shadow: inset 200px 0 0 0 var(--button-hover-color);
         }
+
+        svg {
+            path {
+                fill: var(--home-text-color);
+            }
+        }
     }
 }
 
-/* ---- Mouse Scroll ---- */
+/* ======= Mouse Scroll ======= */
 .scroll-ind {
     display: block;
     margin: 0 auto;
@@ -325,7 +382,7 @@
     width: 24px;
     border-radius: 14px;
     transform: none;
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--mouse-color);
     top: 170px;
 
     .wheel {
@@ -333,11 +390,11 @@
         width: 2px;
         display: block;
         margin: 5px auto;
-        background: var(--text-color);
+        background: var(--mouse-color);
         position: relative;
         height: 4px;
         width: 4px;
-        border: 2px solid var(--text-color);
+        border: 2px solid var(--mouse-color);
         -webkit-border-radius: 8px;
         border-radius: 8px;
 
@@ -431,7 +488,7 @@
     }
 }
 
-/* ---- About Page ---- */
+/* ======= About Page ======= */
 #about-page {
     width: 100%;
     height: 100vh;
@@ -487,17 +544,19 @@
                 border: 1px solid var(--button-color);
                 box-shadow: inset 0 0 0 0 var(--button-hover-color);
                 transition: ease-out 0.5s;
+                color: var(--text-color);
 
                 &:hover {
                     border: 1px solid var(--button-hover-color);
                     box-shadow: inset 130px 0 0 0 var(--button-hover-color);
+                    color: var(--button-text-color);
                 }
             }
         }
     }
 }
 
-/* ---- Skill Page ---- */
+/* ======= Skill Page ======= */
 #skill-page {
     width: 100%;
     height: 100vh;
@@ -518,6 +577,7 @@
         margin: 0 10px 0 10px;
         width: 18rem;
         background-color: var(--skill-card-background-color);
+        color: var(--skill-text-color);
         padding: 2rem;
         cursor: pointer;
         transition: ease 0.3s;
@@ -542,17 +602,17 @@
 
         &:hover {
             background-color: var(--skill-card-hover-color);
-            color: var(--text-color);
+            color: var(--skill-text-color);
             transform: translateY(-5px);
 
             .uil {
-                color: var(--text-color);
+                color: var(--skill-text-color);
             }
         }
     }
 }
 
-/* ---- Project Page ---- */
+/* ======= Project Page ======= */
 #project-page {
     width: 100%;
     height: auto;
@@ -583,7 +643,6 @@
         img {
             height: 100%;
             border-radius: 0;
-            opacity: 0.3;
         }
 
         #yes {
@@ -607,6 +666,23 @@
             background: -webkit-linear-gradient(to left, var(--project-card-hover-color), var(--project-card-background-color));
             background: linear-gradient(to left, var(--project-card-hover-color), var(--project-card-background-color));
             opacity: 0.9;
+        }
+
+        .odd {
+            position: absolute;
+            font-size: 12rem;
+            right: 0;
+            top: 0;
+            margin: -5.5rem 5rem;
+        }
+
+        .even {
+            width: 100%;
+            position: absolute;
+            font-size: 12rem;
+            left: 0;
+            top: 0;
+            margin: -5.5rem -26rem;
         }
 
         .project-card-body {
@@ -652,28 +728,11 @@
                     box-shadow: inset 200px 0 0 0 var(--button-hover-color);
                 }
             }
-
-            .odd {
-                position: absolute;
-                font-size: 12rem;
-                right: 0;
-                top: 0;
-                margin: -5.5rem 5rem;
-            }
-
-            .even {
-                width: 100%;
-                position: absolute;
-                font-size: 12rem;
-                left: 0;
-                top: 0;
-                margin: -5.5rem -26rem;
-            }
         }
     }
 }
 
-/* ---- Contact Page ---- */
+/* ======= Contact Page ======= */
 #contact-page {
     width: 100%;
     height: 100vh;
@@ -718,7 +777,7 @@
     }
 }
 
-/* ---- Footer ---- */
+/* ======= Footer ======= */
 footer {
     a {
         text-decoration: none;
@@ -737,4 +796,14 @@ footer {
     height: 100vh;
     background-color: #111;
     position: absolute;
+}
+
+.newapp {
+    width: 100%;
+    height: 100vh;
+    background-color: #1C1D25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }

@@ -9,7 +9,7 @@ const About = () => {
                     initial={{ opacity: 0, x: -300 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: false }}
-                    transition={{ delay: 0.1, duration: 0.5, type: 'tween', ease: "easeOut" }}
+                    transition={{ delay: 0.1, duration: 1, type: 'tween', ease: "easeInOut" }}
                 >
                     <img src="assets/base/profile_img.png" alt="" />
                 </motion.section>
@@ -17,7 +17,7 @@ const About = () => {
                     initial={{ opacity: 0, x: -300 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: false }}
-                    transition={{ delay: 0.3, duration: 0.5, type: 'tween', ease: "easeOut" }}
+                    transition={{ delay: 0.3, duration: 1, type: 'tween', ease: "easeInOut" }}
                 >
                     <h3 className="header-title">
                         About me.

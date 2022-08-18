@@ -1,9 +1,19 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const ProjectCard = (props) => {
     return (
-        <div className="project-card">
+        <motion.div
+            initial={{ opacity: 0, x: -300 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false }}
+            transition={{ delay: 0.2, duration: 1, type: 'tween', ease: "easeIn" }}
+
+            className="project-card">
             <img className="card-img" src={props.image} alt="" />
+            <div>
+
+            </div>
             <div className="card-img-overlay">
                 <div className="project-card-body" id={props.is_shift}>
                     <h2>{props.title}</h2>
@@ -20,7 +30,7 @@ const ProjectCard = (props) => {
                     <span className={props.number}>{props.sl_number}</span>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

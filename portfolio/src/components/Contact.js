@@ -1,14 +1,27 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const Contact = () => {
     return (
         <section id="contact-page">
             <div className="contact-page-wrapper container">
-                <h3 className="header-title">
+                <motion.h3
+                    initial={{ x: -300, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: false }}
+                    transition={{ delay: 0.1, duration: 1, type: 'tween', ease: "easeInOut" }}
+                    
+                    className="header-title">
                     Contact Me.
-                </h3>
+                </motion.h3>
 
-                <section className='my-5'>
+                <motion.section
+                    initial={{ x: -300, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: false }}
+                    transition={{ delay: 0.2, duration: 1, type: 'tween', ease: "easeInOut" }}
+
+                    className='my-5'>
                     <form action="" autoComplete='off'>
                         <h2>Let's get in touch</h2>
                         <p className='mb-3'>If you would like to discuss any project or inquire, feel free to drop me a message.</p>
@@ -31,7 +44,7 @@ const Contact = () => {
                             Send <i class="uil uil-message"></i>
                         </button>
                     </form>
-                </section>
+                </motion.section>
             </div>
         </section>
     )
