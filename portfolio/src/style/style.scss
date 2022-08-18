@@ -41,6 +41,7 @@
     --navbar-text-color: var(--color-6);
     --navbar-svg-color: var(--color-4);
     --navbar-hover-color: var(--color-13);
+    --navbar-shadow-color: rgba(28, 29, 37, 0.9);
 
     /* ---- For Button Color ---- */
     --button-color: var(--color-4);
@@ -128,12 +129,14 @@
         padding: 9px 11px;
         color: var(--text-color);
         font-size: 18px;
-        background-color: var(--color-13);
+        background: var(--button-color);
+        background: -webkit-linear-gradient(to right, var(--button-graident-color), var(--button-color));
+        background: linear-gradient(to left, var(--button-graident-color), var(--button-color));
         border-radius: 3px;
     }
 
     &:hover {
-        box-shadow: 0px 0px 3px 0px var(--color-13);
+        box-shadow: 0px 0px 3px 0px var(--button-color);
     }
 }
 
@@ -144,7 +147,7 @@
 
 .navbar {
     z-index: 1000;
-    //box-shadow: 0px 0px 8px 0px #111;
+    background-color: var(--navbar-shadow-color);
 
     .navbar-toggler {
         border: none;
@@ -189,7 +192,7 @@
 
 .navbar-brand {
     svg {
-        width: 150px;
+        width: 60px;
 
         &:hover rect,
         &:hover g path {

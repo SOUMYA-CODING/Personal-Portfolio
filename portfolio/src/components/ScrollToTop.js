@@ -3,10 +3,10 @@ import React from 'react'
 const ScrollToTop = () => {
 
     window.onscroll = () => {
-        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-            document.getElementById("scrolltotop").style.display = "block";
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            document.getElementById('scrolltotop').style.display = "block"
         } else {
-            document.getElementById("scrolltotop").style.display = "none"
+            document.getElementById('scrolltotop').style.display = "none"
         }
     }
 

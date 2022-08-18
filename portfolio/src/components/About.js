@@ -1,13 +1,24 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const About = () => {
     return (
         <section id="about-page">
             <div className="about-page-wrapper container">
-                <section>
+                <motion.section
+                    initial={{ opacity: 0, x: -300 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: false }}
+                    transition={{ delay: 0.1, duration: 0.5, type: 'tween', ease: "easeOut" }}
+                >
                     <img src="assets/base/profile_img.png" alt="" />
-                </section>
-                <section>
+                </motion.section>
+                <motion.section
+                    initial={{ opacity: 0, x: -300 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: false }}
+                    transition={{ delay: 0.3, duration: 0.5, type: 'tween', ease: "easeOut" }}
+                >
                     <h3 className="header-title">
                         About me.
                     </h3>
@@ -28,7 +39,7 @@ const About = () => {
                             Resume
                         </a>
                     </div>
-                </section>
+                </motion.section>
             </div>
         </section>
     )
