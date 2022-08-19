@@ -18,7 +18,7 @@ const Skill = () => {
                 <motion.h3
                     initial={{ x: -500, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.2, duration: 0.8, type: 'tween', ease: "easeIn" }}
+                    transition={{ delay: 0.1, duration: 0.8, type: 'tween', ease: "easeIn" }}
                     viewport={{ once: false }}
 
                     className="header-title">

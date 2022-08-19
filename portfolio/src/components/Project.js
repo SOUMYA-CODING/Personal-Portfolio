@@ -23,7 +23,7 @@ const Project = () => {
                     initial={{ x: -300, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     viewport={{ once: false }}
-                    transition={{ delay: 0.1, duration: 1, type: 'tween', ease: "easeInOut", staggerChildren: 0.3 }}
+                    transition={{ delay: 0.1, duration: 1, type: 'tween', ease: "easeInOut"}}
 
                     className="header-title">
                     Latest Work
