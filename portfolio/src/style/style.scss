@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* ======= Custom Color ======= */
 :root {
     --color-1: #1C1D25;
