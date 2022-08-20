@@ -24,7 +24,7 @@ const ProjectCard = (props) => {
                                 fill="white" />
                         </svg>
                     </a>
-                    <span className={props.number}>{props.sl_number}</span>
+                    <h1 className={props.number}>{props.sl_number}</h1>
                 </div>
             </div>
         </motion.div>
