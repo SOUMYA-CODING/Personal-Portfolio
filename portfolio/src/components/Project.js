@@ -8,7 +8,7 @@ const Project = () => {
         return <ProjectCard
             title={list.title}
             description={list.description}
-            link={list.link}
+            //link={list.link}
             image={list.image}
             is_shift={list.is_shift}
             number={list.number}
@@ -23,7 +23,7 @@ const Project = () => {
                     initial={{ x: -300, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     viewport={{ once: false }}
-                    transition={{ delay: 0.1, duration: 1, type: 'tween', ease: "easeInOut"}}
+                    transition={{ delay: 0.1, duration: 1, type: 'tween', ease: "easeInOut" }}
 
                     className="header-title">
                     Latest Work
