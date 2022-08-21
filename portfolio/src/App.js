@@ -14,6 +14,32 @@ import Project from './components/Project'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
+import NewApp from './projects/NewApp'
+
+import { Route, Routes } from 'react-router-dom'
+
+const App = () => {
+    return (
+        <Routes>
+            <Route exact path="/" element={<>
+                <ScrollToTop />
+                <Socialicons />
+                <Header />
+                <Home />
+                <About />
+                <Skill />
+                <Project />
+                <Contact />
+                <Footer />
+            </>} />
+            {/* <Route exact path='/'>
+                
+            </Route> */}
+            <Route exact path='/personalproject' element={<NewApp />} />
+        </Routes>
+    )
+}
+/*
 const App = () => {
     return (
         <main>
@@ -27,7 +53,7 @@ const App = () => {
             <Contact />
             <Footer />
         </main>
-    );
-}
+    )
+}*/
 
 export default App;
