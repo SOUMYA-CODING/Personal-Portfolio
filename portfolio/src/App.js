@@ -14,7 +14,7 @@ import Project from './components/Project'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
-import NewApp from './projects/NewApp'
+import PersonalProject from './projects/PersonalProject'
 
 import { Route, Routes } from 'react-router-dom'
 
@@ -32,28 +32,9 @@ const App = () => {
                 <Contact />
                 <Footer />
             </>} />
-            {/* <Route exact path='/'>
-                
-            </Route> */}
-            <Route exact path='/personalproject' element={<NewApp />} />
+            <Route exact path='/personalproject' element={<PersonalProject />} />
         </Routes>
     )
 }
-/*
-const App = () => {
-    return (
-        <main>
-            <ScrollToTop />
-            <Socialicons />
-            <Header />
-            <Home />
-            <About />
-            <Skill />
-            <Project />
-            <Contact />
-            <Footer />
-        </main>
-    )
-}*/
 
 export default App;
