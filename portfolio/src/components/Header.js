@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     const [theme, setTheme] = useState("dark-mode");
@@ -41,11 +42,11 @@ const Header = () => {
 
             className="header-wrapper">
             <nav className="navbar navbar-expand-lg fixed-top">
-                <div className="container">
+                <div className="container"> 
                     {/* ----- Website Logo ----- */}
-                    <a href="#index" className="navbar-brand">
+                    <Link to="/" className="navbar-brand">
                         <img id='brand_icon' src="assets/icons/svg_light_logo.svg" alt="" />
-                    </a>
+                    </Link>
 
                     {/* ----- Hamburger Icon ----- */}
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

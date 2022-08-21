@@ -20,20 +20,22 @@ import { Route, Routes } from 'react-router-dom'
 
 const App = () => {
     return (
-        <Routes>
-            <Route exact path="/" element={<>
-                <ScrollToTop />
-                <Socialicons />
-                <Header />
-                <Home />
-                <About />
-                <Skill />
-                <Project />
-                <Contact />
-                <Footer />
-            </>} />
-            <Route exact path='/personalproject' element={<PersonalProject />} />
-        </Routes>
+        <>
+            <ScrollToTop />
+            <Socialicons />
+            <Header />
+            <Routes>
+                <Route exact path="/" element={<>
+                    <Home />
+                    <About />
+                    <Skill />
+                    <Project />
+                    <Contact />
+                </>} />
+                <Route exact path='/personalproject' element={<PersonalProject />} />
+            </Routes>
+            <Footer />
+        </>
     )
 }
 
