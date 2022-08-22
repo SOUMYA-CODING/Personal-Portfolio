@@ -1,11 +1,21 @@
 @media screen and (max-width: 600px) {
 
-    /* ---- Common ---- */
+    /* ======= Common ======= */
     .social-link {
         display: none;
     }
 
-    /* ---- Home Page ---- */
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            display: flex;
+        }
+    }
+
+    /* ======= Home Page ======= */
     .home-page-wrapper {
         padding: 0 1rem;
 
@@ -27,7 +37,7 @@
         }
     }
 
-    /* ---- About Page ---- */
+    /* ======= About Page ======= */
     #about-page {
         height: auto;
     }
@@ -46,7 +56,7 @@
         }
     }
 
-    /* ---- Skill Page ---- */
+    /* ======= Skill Page ======= */
     #skill-page {
         height: auto;
     }
@@ -57,7 +67,7 @@
         padding-bottom: 2rem;
 
         section {
-            flex-direction: column;
+            justify-content: center;
         }
 
         .skill-card {
@@ -66,7 +76,7 @@
         }
     }
 
-    /* ---- Project Page ---- */
+    /* ======= Project Page ======= */
     #project-page {
         height: auto;
     }
@@ -102,7 +112,7 @@
         }
     }
 
-    /* ---- Contact Page ---- */
+    /* ======= Contact Page ======= */
     #contact-page {
         width: 100%;
         height: auto;
@@ -111,5 +121,55 @@
     .contact-page-wrapper {
         padding-top: 5rem;
         padding-bottom: 2rem;
+    }
+
+    /* ======= Project Details Page ======= */
+    .project-details-page-wrapper {
+        height: 100%;
+        padding-top: 5.5rem;
+        padding-bottom: 2rem;
+
+        .small-description-section {
+            flex-direction: column;
+
+            .divider {
+                background-color: #fff;
+                height: 0;
+                padding: 1px;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .project-introduction {
+            p {
+                width: 100%;
+            }
+        }
+
+        .project-description {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-size: 18px;
+                letter-spacing: 1px;
+                text-align: justify;
+            }
+
+            section {
+                width: 100%;
+            }
+
+            .image {
+                width: 100%;
+            }
+        }
+
+        .project-design {
+            img {
+                width: 100%;
+            }
+        }
     }
 }

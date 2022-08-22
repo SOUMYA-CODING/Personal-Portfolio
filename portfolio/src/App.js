@@ -14,25 +14,25 @@ import Project from './components/Project'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
-import PersonalProject from './projects/PersonalProject'
+import Project_1 from './projects/Project_1'
 
 import { Route, Routes } from 'react-router-dom'
 
 const App = () => {
     return (
         <>
-            <ScrollToTop />
             <Socialicons />
             <Header />
             <Routes>
                 <Route exact path="/" element={<>
+                    <ScrollToTop />
                     <Home />
                     <About />
                     <Skill />
                     <Project />
                     <Contact />
                 </>} />
-                <Route exact path='/personalproject' element={<PersonalProject />} />
+                <Route exact path='/project-1' element={<Project_1 />} />
             </Routes>
             <Footer />
         </>

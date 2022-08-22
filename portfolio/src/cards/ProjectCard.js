@@ -16,7 +16,7 @@ const ProjectCard = (props) => {
                 <div className="project-card-body" id={props.is_shift}>
                     <h2>{props.title}</h2>
                     <p className="mb-4">{props.description}</p>
-                    <Link to="/personalproject">
+                    <Link to={props.link} params={props.id}>
                         View &nbsp;
                         <svg className="btn-arrow" width="42" height="24" viewBox="0 0 62 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">

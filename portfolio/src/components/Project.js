@@ -6,13 +6,14 @@ import { motion } from 'framer-motion'
 const Project = () => {
     const data = ProjectData.map(list => {
         return <ProjectCard
+            id={list.id}
             title={list.title}
             description={list.description}
-            //link={list.link}
             image={list.image}
             is_shift={list.is_shift}
             number={list.number}
             sl_number={list.sl_number}
+            link={list.link}
         />
     })
 

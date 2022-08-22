@@ -27,7 +27,7 @@ const Header = () => {
 
 
     const navBar = document.querySelectorAll(".nav-link");
-    const navCollapse = document.querySelector(".navbar-collapse.collapse");
+    const navCollapse = document.getElementById("navbarNav");
     navBar.forEach(function (a) {
         a.addEventListener("click", function () {
             navCollapse.classList.remove("show");
@@ -42,7 +42,7 @@ const Header = () => {
 
             className="header-wrapper">
             <nav className="navbar navbar-expand-lg fixed-top">
-                <div className="container"> 
+                <div className="container">
                     {/* ----- Website Logo ----- */}
                     <Link to="/" className="navbar-brand">
                         <img id='brand_icon' src="assets/icons/svg_light_logo.svg" alt="" />
@@ -69,11 +69,6 @@ const Header = () => {
                             <li className="nav-item">
                                 <a className="nav-link" href="#project-page">Projects</a>
                             </li>
-                            {/**
-                            <li className="nav-item">
-                                <a className="nav-link" href="#blog-page">Blog</a>
-                            </li>
-                             */}
                             <li className="nav-item">
                                 <a className="nav-link" href="#contact-page">Contact</a>
                             </li>
