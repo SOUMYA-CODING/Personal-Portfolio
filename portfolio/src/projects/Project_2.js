@@ -33,20 +33,24 @@ const Project_2 = () => {
                             <span className='description'>
                                 <strong>COMPLETION TIME :</strong>
                                 <br />
-                                <p>Under Development</p>
-                            </span>
-
-                            <span className='divider'></span>
-
-                            <span className='description'>
-                                <strong>TECHNOLOGY USED :</strong>
-                                <br />
-                                <p>HTML, CSS, SASS, Bootstrap, React JS, JavaScript, FLutter, Django REST Framework, MySQL, Framer Motion</p>
+                                <p>Under Development | Not Completed</p>
                             </span>
                         </span>
+
+                        <div className='tech my-3'>
+                            <p>react js</p>
+                            <p>Flutter</p>
+                            <p>Html</p>
+                            <p>Css</p>
+                            <p>sass</p>
+                            <p>bootstrap</p>
+                            <p>django rest framework</p>
+                            <p>mysql</p>
+                            <p>framer motion</p>
+                        </div>
                     </section>
 
-                    <section className='project-image mt-5'>
+                    <section className='project-image mt-4'>
                         <img src="assets/projects/ecommerce_artisans-4.png" alt="" />
                     </section>
 

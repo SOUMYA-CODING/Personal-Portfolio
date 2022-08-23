@@ -850,6 +850,20 @@ footer {
     padding-top: 7rem;
     padding-bottom: 2rem;
 
+    .tech {
+        display: flex;
+        flex-wrap: wrap;
+
+        p {
+            padding: 7px 16px;
+            margin-right: 7px;
+            color: var(--text-color);
+            text-transform: uppercase;
+            background-color: #4C4F65;
+            border-radius: 5px;
+        }
+    }
+
     .small-description-section {
         color: var(--text-color);
         display: flex;
@@ -859,10 +873,6 @@ footer {
             margin-right: 1.5rem;
             letter-spacing: 1px;
 
-            .tech {
-                width: 100%;
-            }
-
             strong {
                 color: var(--color-13);
             }
@@ -870,7 +880,7 @@ footer {
 
         .divider {
             background-color: #fff;
-            height: 65px;
+            height: 50px;
             padding: 1px;
             margin-right: 1rem;
         }

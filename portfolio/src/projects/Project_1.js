@@ -35,18 +35,18 @@ const Project_1 = () => {
                                 <br />
                                 <p>16 Days</p>
                             </span>
-
-                            <span className='divider'></span>
-
-                            <span className='description'>
-                                <strong>TECHNOLOGY USED :</strong>
-                                <br />
-                                <p className='tech'>HTML, CSS, JavaScript, Bootstrap, Django, MySQL</p>
-                            </span>
                         </span>
+
+                        <div className='tech my-3'>
+                            <p>Html</p>
+                            <p>Css</p>
+                            <p>bootstrap</p>
+                            <p>django</p>
+                            <p>mysql</p>
+                        </div>
                     </section>
 
-                    <section className='project-image mt-5'>
+                    <section className='project-image mt-4'>
                         <img src="assets/projects/guest_house-4.png" alt="" />
                     </section>
 

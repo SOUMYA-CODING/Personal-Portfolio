@@ -130,14 +130,19 @@
         padding-bottom: 2rem;
 
         .small-description-section {
+            align-items: flex-start;
             flex-direction: column;
 
+            .description {
+                letter-spacing: 1px;
+
+                strong {
+                    color: var(--color-13);
+                }
+            }
+
             .divider {
-                background-color: #fff;
-                height: 0;
-                padding: 1px;
-                margin-right: 0;
-                margin-bottom: 1rem;
+                display: none;
             }
         }
 
