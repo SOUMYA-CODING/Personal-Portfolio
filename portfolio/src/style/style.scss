@@ -853,10 +853,15 @@ footer {
     .small-description-section {
         color: var(--text-color);
         display: flex;
+        align-items: center;
 
         .description {
-            margin-right: 1rem;
+            margin-right: 1.5rem;
             letter-spacing: 1px;
+
+            .tech {
+                width: 100%;
+            }
 
             strong {
                 color: var(--color-13);
@@ -865,7 +870,7 @@ footer {
 
         .divider {
             background-color: #fff;
-            height: 50px;
+            height: 65px;
             padding: 1px;
             margin-right: 1rem;
         }

@@ -9,13 +9,14 @@ export default [
         number: "odd",
         link: "/project-1"
     },
-    // {
-    //     id: "02",
-    //     sl_number: "02",
-    //     title: "Coffee Wala",
-    //     description: "A cafe website",
-    //     image: "assets/projects/coffee_wala.png",
-    //     is_shift: "yes",
-    //     number: "even"
-    // },
+    {
+        id: "02",
+        sl_number: "02",
+        title: "The Art Work",
+        description: "A ecommerce website",
+        image: "assets/projects/ecommerce_artisans-1.png",
+        is_shift: "yes",
+        number: "even",
+        link: "/project-2"
+    }
 ]

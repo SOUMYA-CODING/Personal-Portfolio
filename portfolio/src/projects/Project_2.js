@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const Project_1 = () => {
+const Project_2 = () => {
     return (
         <>
             <section id="project-details-page">
@@ -12,7 +12,7 @@ const Project_1 = () => {
 
                     className="project-details-page-wrapper container">
                     <section>
-                        <h3 className="header-title">Silicon Guest House</h3>
+                        <h3 className="header-title">Ecommerce For Artisans</h3>
                         <span className='my-3 small-description-section'>
                             <span className='description'>
                                 <strong>ROLE :</strong>
@@ -33,7 +33,7 @@ const Project_1 = () => {
                             <span className='description'>
                                 <strong>COMPLETION TIME :</strong>
                                 <br />
-                                <p>16 Days</p>
+                                <p>Under Development</p>
                             </span>
 
                             <span className='divider'></span>
@@ -41,13 +41,13 @@ const Project_1 = () => {
                             <span className='description'>
                                 <strong>TECHNOLOGY USED :</strong>
                                 <br />
-                                <p className='tech'>HTML, CSS, JavaScript, Bootstrap, Django, MySQL</p>
+                                <p>HTML, CSS, SASS, Bootstrap, React JS, JavaScript, FLutter, Django REST Framework, MySQL, Framer Motion</p>
                             </span>
                         </span>
                     </section>
 
                     <section className='project-image mt-5'>
-                        <img src="assets/projects/guest_house-4.png" alt="" />
+                        <img src="assets/projects/ecommerce_artisans-4.png" alt="" />
                     </section>
 
                     <section className='project-introduction my-5'>
@@ -83,13 +83,13 @@ const Project_1 = () => {
                             </p>
                         </section>
                         <section>
-                            <img src="assets/projects/guest_house-2.png" alt="" className='image' />
+                            <img src="assets/projects/ecommerce_artisans-2.png" alt="" className='image' />
                         </section>
                     </section>
 
                     <section className='project-design my-5'>
                         <h3 className="header-title mb-3 text-center">Design</h3>
-                        <img src="assets/projects/guest_house-3.png" alt="" />
+                        <img src="assets/projects/ecommerce_artisans-3.png" alt="" />
                     </section>
                 </motion.div>
             </section>
@@ -97,4 +97,4 @@ const Project_1 = () => {
     )
 }
 
-export default Project_1
+export default Project_2
