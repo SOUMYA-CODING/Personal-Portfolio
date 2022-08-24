@@ -11,7 +11,7 @@ const Footer = () => {
                 <a href="https://twitter.com/soumyap24717773" target="_blank"><i className="fa-brands fa-twitter"></i></a>
                 <a href="https://dev.to/soumyaprakashsahu" target="_blank"><i className="fa-brands fa-dev"></i></a>
             </section>
-            &copy; 2022 Built and design by &nbsp; <a href="../Humans.txt">Soumya Prakash Sahu</a>
+            &copy; 2022 Built and design by &nbsp; <a href="Humans.txt">Soumya Prakash Sahu</a>
         </footer>
     )
 }
