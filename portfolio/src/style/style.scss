@@ -291,6 +291,11 @@ html {
             width: 100%;
             background-color: var(--navbar-hover-color);
         }
+
+        #modeIcon {
+            background-color: transparent;
+            border: none;
+        }
     }
 }
 
@@ -549,7 +554,8 @@ html {
         width: 50%;
 
         img {
-            width: 450px;
+            height: 500px;
+            border: 5px solid var(--color-11);
         }
 
         &:nth-child(1) {

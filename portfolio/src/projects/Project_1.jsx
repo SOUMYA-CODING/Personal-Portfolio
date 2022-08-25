@@ -59,7 +59,7 @@ const Project_1 = () => {
                             them to access it easily.
                         </p>
 
-                        <a href="https://github.com/SNH-CODING/Silicon-Guest-House" target='_blank' className='mt-3'>
+                        <a href="https://github.com/SNH-CODING/Silicon-Guest-House" rel="noopener noreferrer" target='_blank' className='mt-3'>
                             View Code
                             <svg class="btn-arrow" width="42" height="24" viewBox="0 0 62 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">

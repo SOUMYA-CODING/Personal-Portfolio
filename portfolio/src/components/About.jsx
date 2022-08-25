@@ -11,7 +11,7 @@ const About = () => {
                     viewport={{ once: false }}
                     transition={{ delay: 0.1, duration: 1, type: 'tween', ease: "easeInOut" }}
                 >
-                    <img src="assets/base/profile_img.png" alt="" />
+                    <img src="assets/base/profile_img_2.png" alt="" />
                 </motion.section>
                 <motion.section
                     initial={{ opacity: 0, x: -300 }}
@@ -35,7 +35,7 @@ const About = () => {
                         <a href="#contact-page" className='me-2'>
                             Hire Me
                         </a>
-                        <a href="https://drive.google.com/file/d/1lGbYQ8LP3BFfEbyYfFLPJso-molTuzEW/view?usp=sharing" target="_blank">
+                        <a href="https://drive.google.com/file/d/1lGbYQ8LP3BFfEbyYfFLPJso-molTuzEW/view?usp=sharing" rel="noopener noreferrer" target="_blank">
                             Resume
                         </a>
                     </div>

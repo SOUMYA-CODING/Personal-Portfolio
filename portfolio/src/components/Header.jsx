@@ -73,7 +73,7 @@ const Header = () => {
                                 <a className="nav-link" href="#contact-page">Contact</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id='modeIcon' onClick={lightdarkmode}><i className="fa-solid fa-sun"></i></a>
+                                <button className="nav-link" href='#' id='modeIcon' onClick={lightdarkmode}><i className="fa-solid fa-sun"></i></button>
                             </li>
                         </ul>
                     </div>
