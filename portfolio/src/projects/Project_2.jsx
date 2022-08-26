@@ -57,10 +57,14 @@ const Project_2 = () => {
                     <section className='project-introduction my-5'>
                         <h3 className="header-title mb-3">Introduction</h3>
                         <p>
-                            Guest House project was built for Silicon Institute of Technology to manage their guest
-                            house booking through a website. It helps their guests and students to book a room easily through
-                            a website rather than going to counter for booking. It has a very simple UI design which helps
-                            them to access it easily.
+                            The Indian handicraft and handloom industry engages over 23 million craftsmen. But some ecommerce platforms don't allow artisans to sell or promote their products online or globally.
+                            That’s why we see a smaller number of products on handlooms or handmade products.
+                            <br />
+                            So I develop a cross-platform e-commerce marketplace for craftsmen, artisans to make markets, sell high-quality handicrafts and goods.
+                            This platform will help them to grow and promote the Indian handicraft
+                            industry globally. A single e-commerce platform will allow buyers and
+                            sellers to meet at one platform for business.
+
                         </p>
 
                         <a href="https://github.com/SNH-CODING/Ecommerce-For-Artsians" rel="noopener noreferrer" target='_blank' className='mt-3'>
@@ -79,11 +83,9 @@ const Project_2 = () => {
                             <h2 className="mb-3">An elegent design</h2>
                             <hr />
                             <p>
-                                As a Full Stack Developer, i was responsible for building the entire Website.
-                                My main task to build this website elegent, responsive and full functions.
-                                <br /><br />
-                                This website also includes a custom admin dashboard, including a responsive theme,
-                                a custom flex grid system, custom form validation and more.
+                                As a Full Stack Developer, I was responsible for building the entire Website.
+                                My main idea is to build this website elegant, responsive and with full functions, which helps the artisans to manage their products,
+                                and also attractive for the customer, basically a clean UI/UX design.
                             </p>
                         </section>
                         <section>

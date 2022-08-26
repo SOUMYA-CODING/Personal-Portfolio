@@ -53,7 +53,7 @@ const Project_1 = () => {
                     <section className='project-introduction my-5'>
                         <h3 className="header-title mb-3">Introduction</h3>
                         <p>
-                            Guest House project was built for Silicon Institute of Technology to manage their guest
+                            The Guest House project was built for Silicon Institute of Technology to manage their guest
                             house booking through a website. It helps their guests and students to book a room easily through
                             a website rather than going to counter for booking. It has a very simple UI design which helps
                             them to access it easily.
@@ -75,11 +75,9 @@ const Project_1 = () => {
                             <h2 className="mb-3">An elegent design</h2>
                             <hr />
                             <p>
-                                As a Full Stack Developer, i was responsible for building the entire Website.
-                                My main task to build this website elegent, responsive and full functions.
-                                <br /><br />
-                                This website also includes a custom admin dashboard, including a responsive theme,
-                                a custom flex grid system, custom form validation and more.
+                                As a Full Stack Developer, i was responsible for building the entire Website. My main task is to build this website with elegant, responsive and full functions.
+                                <br />
+                                This website also includes a custom admin dashboard, including a responsive theme, a custom flex grid system, custom form validation and more.
                             </p>
                         </section>
                         <section>
