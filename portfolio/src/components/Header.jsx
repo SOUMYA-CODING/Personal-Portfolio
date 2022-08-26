@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const ProjectHeader = () => {
     // For Dark Mode
@@ -66,6 +66,37 @@ const ProjectHeader = () => {
         }
     ]
 
+    const location = useLocation()
+    const path = location.pathname
+
+    const [nav, setNav] = useState()
+
+    useEffect(() => {
+        navList();
+    }, [])
+
+    const navList = () => {
+        if (path === "/") {
+            const data = default_nav_link.map((list) => {
+                return (
+                    <li className="nav-item">
+                        <a href={list.link} className='nav-link'>{list.name}</a>
+                    </li>
+                )
+            })
+            setNav(data)
+        } else {
+            const data = project_nav_link.map((list) => {
+                return (
+                    <li className="nav-item">
+                        <Link to={list.link} className='nav-link'>{list.name}</Link>
+                    </li>
+                )
+            })
+            setNav(data)
+        }
+    }
+
     return (
         <motion.section
             initial={{ y: -300, opacity: 0 }}
@@ -89,15 +120,7 @@ const ProjectHeader = () => {
                     {/* ----- Navbar Menu ----- */}
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ms-auto">
-                            {
-                                default_nav_link.map((list) => {
-                                    return (
-                                        <li className="nav-item">
-                                            <a href={list.link} className='nav-link'>{list.name}</a>
-                                        </li>
-                                    );
-                                })
-                            }
+                            {nav}
                             <li className="nav-item">
                                 <button className="nav-link" href='#' id='modeIcon' onClick={lightdarkmode}><i className="fa-solid fa-sun"></i></button>
                             </li>

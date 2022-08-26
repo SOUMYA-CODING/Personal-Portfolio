@@ -23,9 +23,9 @@ const App = () => {
     return (
         <>
             <Socialicons />
+            <Header />
             <Routes>
                 <Route exact path="/" element={<>
-                    <Header />
                     <ScrollToTop />
                     <Home />
                     <About />

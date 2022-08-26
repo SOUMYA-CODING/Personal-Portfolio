@@ -1,11 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import ProjectHeader from '../components/ProjectHeader'
+// import ProjectHeader from '../components/ProjectHeader'
 
 const Project_1 = () => {
     return (
         <>
-            <ProjectHeader />
+            {/* <ProjectHeader /> */}
             <section id="project-details-page">
                 <motion.div
                     initial={{ opacity: 0 }}
