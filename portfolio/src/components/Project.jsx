@@ -4,7 +4,7 @@ import ProjectData from '../data/ProjectData'
 import { motion } from 'framer-motion'
 
 const Project = () => {
-    
+
     const data = ProjectData.map(list => {
         return <ProjectCard
             id={list.id}

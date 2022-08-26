@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
-const ProjectHeader = () => {
+const Header = () => {
     // For Dark Mode
     const [theme, setTheme] = useState("dark-mode");
 
@@ -36,29 +36,6 @@ const ProjectHeader = () => {
         })
     });
 
-    const default_nav_link = [
-        {
-            name: "Home",
-            link: "#home-page"
-        },
-        {
-            name: "About Me",
-            link: "#about-page"
-        },
-        {
-            name: "Skills",
-            link: "#skill-page"
-        },
-        {
-            name: "Projects",
-            link: "#project-page"
-        },
-        {
-            name: "Contact",
-            link: "#contact-page"
-        }
-    ]
-
     const project_nav_link = [
         {
             name: "Home",
@@ -90,10 +67,10 @@ const ProjectHeader = () => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ms-auto">
                             {
-                                default_nav_link.map((list) => {
+                                project_nav_link.map((list) => {
                                     return (
                                         <li className="nav-item">
-                                            <a href={list.link} className='nav-link'>{list.name}</a>
+                                            <Link to={list.link} className='nav-link'>{list.name}</Link>
                                         </li>
                                     );
                                 })
@@ -109,4 +86,4 @@ const ProjectHeader = () => {
     );
 }
 
-export default ProjectHeader;
+export default Header;
