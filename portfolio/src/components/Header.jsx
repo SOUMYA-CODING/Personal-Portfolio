@@ -73,7 +73,7 @@ const ProjectHeader = () => {
 
     useEffect(() => {
         navList();
-    }, [])
+    }, [nav])
 
     const navList = () => {
         if (path === "/") {

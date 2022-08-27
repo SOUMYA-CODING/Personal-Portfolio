@@ -17,6 +17,8 @@ import Footer from './components/Footer'
 import Project_1 from './projects/Project_1'
 import Project_2 from './projects/Project_2'
 
+import AutoScroll from './components/AutoScroll'
+
 import { Route, Routes } from 'react-router-dom'
 
 const App = () => {
@@ -33,8 +35,18 @@ const App = () => {
                     <Project />
                     <Contact />
                 </>} />
-                <Route exact path='/project-1' element={<Project_1 />} />
-                <Route exact path='/project-2' element={<Project_2 />} />
+                <Route exact path='/project-1' element={
+                    <>
+                        <Project_1 />
+                        <AutoScroll />
+                    </>
+                } />
+                <Route exact path='/project-2' element={
+                    <>
+                        <Project_2 />
+                        <AutoScroll />
+                    </>
+                } />
             </Routes>
             <Footer />
         </>
