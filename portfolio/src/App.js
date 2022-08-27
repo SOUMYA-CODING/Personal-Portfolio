@@ -23,10 +23,10 @@ const App = () => {
     return (
         <>
             <Socialicons />
+            <ScrollToTop />
             <Header />
             <Routes>
                 <Route exact path="/" element={<>
-                    <ScrollToTop />
                     <Home />
                     <About />
                     <Skill />

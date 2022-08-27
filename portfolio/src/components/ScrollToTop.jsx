@@ -1,7 +1,7 @@
 import React from 'react'
+import { useEffect } from 'react';
 
 const ScrollToTop = () => {
-
     window.onscroll = () => {
         if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
             document.getElementById('scrolltotop').style.display = "block"
@@ -10,11 +10,19 @@ const ScrollToTop = () => {
         }
     }
 
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
+
     return (
         <div className='scrolltotop' id='scrolltotop'>
-            <a href="#home-page">
+            <button
+                onClick={() => {
+                    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+                }}
+            >
                 <i class="fa-solid fa-arrow-up"></i>
-            </a>
+            </button>
         </div>
     )
 }

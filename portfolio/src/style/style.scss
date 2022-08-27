@@ -229,14 +229,15 @@ html {
     transition: ease-in-out 0.5;
     z-index: 1000;
 
-    i {
-        padding: 9px 11px;
+    button {
+        padding: 8px 15px;
         color: var(--text-color);
         font-size: 18px;
         background: var(--button-color);
         background: -webkit-linear-gradient(30deg, var(--button-graident-color), var(--button-color));
         background: linear-gradient(30deg, var(--button-graident-color), var(--button-color));
         border-radius: 3px;
+        border: none;
     }
 
     &:hover {

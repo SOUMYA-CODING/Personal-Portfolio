@@ -69,7 +69,7 @@ const ProjectHeader = () => {
     const location = useLocation()
     const path = location.pathname
 
-    const [nav, setNav] = useState()
+    const [nav, setNav] = useState("")
 
     useEffect(() => {
         navList();
