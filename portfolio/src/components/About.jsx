@@ -11,7 +11,7 @@ const About = () => {
                     viewport={{ once: false }}
                     transition={{ delay: 0.1, duration: 1, type: 'tween', ease: "easeInOut" }}
                 >
-                    <img src="assets/base/profile_img_2.png" alt="" />
+                    <img src="assets/base/profile_img_3.jpg" alt="" />
                 </motion.section>
                 <motion.section
                     initial={{ opacity: 0, x: -300 }}

@@ -1,4 +1,612 @@
-/* ======= 576px ======= */
+// /* ======= 576px ======= */
+// @media screen and (max-width: 576px) {
+
+//     /* ======= Common ======= */
+//     .social-link {
+//         display: none;
+//     }
+
+//     .footer-icons {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         a {
+//             display: flex;
+//         }
+//     }
+
+//     /* ======= Home Page ======= */
+//     .home-page-wrapper {
+//         padding: 0 1rem;
+
+//         h1 {
+//             font-size: 26px;
+//         }
+
+//         h3 {
+//             font-size: 19px;
+//         }
+
+//         h4 {
+//             font-size: 23px;
+//         }
+
+//         p {
+//             width: 100%;
+//             text-align: left;
+//         }
+//     }
+
+//     /* ======= About Page ======= */
+//     #about-page {
+//         height: auto;
+//     }
+
+//     .about-page-wrapper {
+//         flex-direction: column;
+//         padding-top: 3rem;
+//         padding-bottom: 2rem;
+
+//         section {
+//             width: 100%;
+
+//             img {
+//                 width: 100%;
+//                 height: 350px;
+//             }
+//         }
+//     }
+
+//     /* ======= Skill Page ======= */
+//     #skill-page {
+//         height: auto;
+//     }
+
+//     .skill-page-wrapper {
+//         height: 100%;
+//         padding-top: 5rem;
+//         padding-bottom: 2rem;
+
+//         section {
+//             justify-content: center;
+//         }
+
+//         .skill-card {
+//             margin: 10px 0 10px 0;
+//             width: 20rem;
+//         }
+//     }
+
+//     /* ======= Project Page ======= */
+//     #project-page {
+//         height: auto;
+//     }
+
+//     .project-page-wrapper {
+//         padding-top: 5rem;
+//         padding-bottom: 2rem;
+
+//         .project-card {
+//             height: 300px !important;
+
+//             &:nth-child(odd) {
+//                 margin-left: 0;
+//             }
+
+//             &:nth-child(even) {
+//                 margin-right: 0;
+//             }
+
+//             .project-card-body {
+//                 padding: 7rem 1rem !important;
+
+//                 h2 {
+//                     font-size: 28px;
+//                 }
+
+//                 .odd,
+//                 .even {
+//                     display: none;
+//                 }
+//             }
+//         }
+//     }
+
+//     /* ======= Contact Page ======= */
+//     #contact-page {
+//         width: 100%;
+//         height: auto;
+//     }
+
+//     .contact-page-wrapper {
+//         padding-top: 5rem;
+//         padding-bottom: 2rem;
+//     }
+
+//     /* ======= Project Details Page ======= */
+//     .project-details-page-wrapper {
+//         height: 100%;
+//         padding-top: 5.5rem;
+//         padding-bottom: 2rem;
+
+//         .small-description-section {
+//             align-items: flex-start;
+//             flex-direction: column;
+
+//             .description {
+//                 letter-spacing: 1px;
+
+//                 strong {
+//                     color: var(--color-13);
+//                 }
+//             }
+
+//             .divider {
+//                 display: none;
+//             }
+//         }
+
+//         .project-introduction {
+//             p {
+//                 width: 100%;
+//             }
+//         }
+
+//         .project-description {
+//             display: flex;
+//             flex-direction: column;
+
+//             p {
+//                 font-size: 18px;
+//                 letter-spacing: 1px;
+//                 text-align: justify;
+//             }
+
+//             section {
+//                 width: 100%;
+//             }
+
+//             .image {
+//                 width: 100%;
+//             }
+//         }
+
+//         .project-design {
+//             img {
+//                 width: 100%;
+//             }
+//         }
+//     }
+// }
+
+// /* ======= 768px ======= */
+// @media screen and (max-width: 768px) {
+
+//     /* ======= Common ======= */
+//     .social-link {
+//         display: none;
+//     }
+
+//     .footer-icons {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         a {
+//             display: flex;
+//         }
+//     }
+
+//     /* ======= Home Page ======= */
+//     .home-page-wrapper {
+//         padding: 0 1rem;
+
+//         h1 {
+//             font-size: 26px;
+//         }
+
+//         h3 {
+//             font-size: 19px;
+//         }
+
+//         h4 {
+//             font-size: 23px;
+//         }
+
+//         p {
+//             width: 100%;
+//             text-align: left;
+//         }
+//     }
+
+//     /* ======= About Page ======= */
+//     #about-page {
+//         height: auto;
+//     }
+
+//     .about-page-wrapper {
+//         flex-direction: column;
+//         padding-top: 3rem;
+//         padding-bottom: 2rem;
+
+//         section {
+//             width: 100%;
+
+//             img {
+//                 height: 400px;
+//             }
+//         }
+//     }
+
+//     /* ======= Skill Page ======= */
+//     #skill-page {
+//         height: auto;
+//     }
+
+//     .skill-page-wrapper {
+//         height: 100%;
+//         padding-top: 5rem;
+//         padding-bottom: 2rem;
+
+//         section {
+//             justify-content: center;
+//         }
+
+//         .skill-card {
+//             margin: 10px 0 10px 0;
+//             width: 20rem;
+//         }
+//     }
+
+//     /* ======= Project Page ======= */
+//     #project-page {
+//         height: auto;
+//     }
+
+//     .project-page-wrapper {
+//         padding-top: 5rem;
+//         padding-bottom: 2rem;
+
+//         .project-card {
+
+
+//             &:nth-child(odd) {
+//                 margin-left: 0;
+//             }
+
+//             &:nth-child(even) {
+//                 margin-right: 0;
+//             }
+
+//             .project-card-body {
+//                 padding: 2rem 1rem;
+
+//                 h2 {
+//                     font-size: 28px;
+//                 }
+
+//                 .odd,
+//                 .even {
+//                     display: none;
+//                 }
+//             }
+//         }
+//     }
+
+//     /* ======= Contact Page ======= */
+//     #contact-page {
+//         width: 100%;
+//         height: auto;
+//     }
+
+//     .contact-page-wrapper {
+//         padding-top: 5rem;
+//         padding-bottom: 2rem;
+//     }
+
+//     /* ======= Project Details Page ======= */
+//     .project-details-page-wrapper {
+//         height: 100%;
+//         padding-top: 5.5rem;
+//         padding-bottom: 2rem;
+
+//         .small-description-section {
+//             align-items: flex-start;
+//             flex-direction: column;
+
+//             .description {
+//                 letter-spacing: 1px;
+
+//                 strong {
+//                     color: var(--color-13);
+//                 }
+//             }
+
+//             .divider {
+//                 display: none;
+//             }
+//         }
+
+//         .project-introduction {
+//             p {
+//                 width: 100%;
+//             }
+//         }
+
+//         .project-description {
+//             display: flex;
+//             flex-direction: column;
+
+//             p {
+//                 font-size: 18px;
+//                 letter-spacing: 1px;
+//                 text-align: justify;
+//             }
+
+//             section {
+//                 width: 100%;
+//             }
+
+//             .image {
+//                 width: 100%;
+//             }
+//         }
+
+//         .project-design {
+//             img {
+//                 width: 100%;
+//             }
+//         }
+//     }
+// }
+
+// /* ======= 992px ======= */
+// @media screen and (max-width: 992px) {
+
+
+//     /* ======= Common ======= */
+//     .social-link {
+//         display: none;
+//     }
+
+//     .footer-icons {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         a {
+//             display: flex;
+//         }
+//     }
+
+//     /* ======= Home Page ======= */
+//     .home-page-wrapper {
+//         padding: 0 1rem;
+//     }
+
+//     /* ======= About Page ======= */
+//     #about-page {
+//         height: auto;
+//     }
+
+//     .about-page-wrapper {
+//         padding-top: 3rem;
+//         padding-bottom: 2rem;
+
+//         section {
+//             width: 100%;
+
+//             img {
+//                 height: 500px;
+//             }
+//         }
+//     }
+
+//     /* ======= Skill Page ======= */
+//     #skill-page {
+//         height: auto;
+//     }
+
+//     .skill-page-wrapper {
+//         height: 100%;
+//         padding-top: 5rem;
+//         padding-bottom: 2rem;
+
+//         section {
+//             justify-content: center;
+//         }
+
+//         .skill-card {
+//             margin: 5px;
+//             width: 20rem;
+//         }
+//     }
+
+//     /* ======= Project Page ======= */
+//     #project-page {
+//         height: auto;
+//     }
+
+//     .project-page-wrapper {
+//         padding-top: 5rem;
+//         padding-bottom: 2rem;
+
+//         .project-card {
+//             width: 100%;
+//             height: 360px;
+
+//             &:nth-child(odd) {
+//                 margin-left: 0;
+//             }
+
+//             &:nth-child(even) {
+//                 margin-right: 0;
+//             }
+
+//             .project-card-body {
+//                 color: var(--project-text-color);
+//                 position: relative;
+//                 z-index: 1;
+//                 padding: 10.5rem 3rem;
+
+//                 h2 {
+//                     font-size: 28px;
+//                 }
+//             }
+//         }
+//     }
+
+//     /* ======= Project Details Page ======= */
+//     .project-details-page-wrapper {
+//         height: 100%;
+//         padding-top: 5.5rem;
+//         padding-bottom: 2rem;
+
+//         .project-description {
+
+
+//             section {
+//                 width: 100%;
+//             }
+
+//             .image {
+//                 width: 100%;
+//             }
+//         }
+
+//         .project-design {
+//             img {
+//                 width: 100%;
+//             }
+//         }
+//     }
+
+// }
+
+// /* ======= 1200px ======= */
+// @media screen and (max-width: 1200px) {
+
+
+//     /* ======= Common ======= */
+//     .social-link {
+//         display: none;
+//     }
+
+//     .footer-icons {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         a {
+//             display: flex;
+//         }
+//     }
+
+//     /* ======= Home Page ======= */
+//     .home-page-wrapper {
+//         padding: 0 1rem;
+//     }
+
+//     /* ======= About Page ======= */
+//     #about-page {
+//         height: auto;
+//     }
+
+//     .about-page-wrapper {
+//         padding-top: 3rem;
+//         padding-bottom: 2rem;
+
+//         section {
+//             width: 100%;
+
+//             img {
+//                 height: 500px;
+//             }
+//         }
+//     }
+
+//     /* ======= Skill Page ======= */
+//     #skill-page {
+//         height: auto;
+//     }
+
+//     .skill-page-wrapper {
+//         height: 100%;
+//         padding-top: 5rem;
+//         padding-bottom: 2rem;
+
+//         section {
+//             justify-content: center;
+//         }
+
+//         .skill-card {
+//             margin: 5px;
+//             width: 20rem;
+//         }
+//     }
+
+//     /* ======= Project Page ======= */
+//     #project-page {
+//         height: auto;
+//     }
+
+//     .project-page-wrapper {
+//         padding-top: 5rem;
+//         padding-bottom: 2rem;
+
+//         .project-card {
+//             width: 100%;
+//             height: 360px;
+
+//             &:nth-child(odd) {
+//                 margin-left: 0;
+//             }
+
+//             &:nth-child(even) {
+//                 margin-right: 0;
+//             }
+
+//             .project-card-body {
+//                 color: var(--project-text-color);
+//                 position: relative;
+//                 z-index: 1;
+//                 padding: 10.5rem 3rem;
+
+//                 h2 {
+//                     font-size: 28px;
+//                 }
+//             }
+//         }
+//     }
+
+//     /* ======= Project Details Page ======= */
+//     .project-details-page-wrapper {
+//         height: 100%;
+//         padding-top: 5.5rem;
+//         padding-bottom: 2rem;
+
+//         .project-description {
+
+
+//             section {
+//                 width: 100%;
+//             }
+
+//             .image {
+//                 width: 100%;
+//             }
+//         }
+
+//         .project-design {
+//             img {
+//                 width: 100%;
+//             }
+//         }
+//     }
+
+// }
+
 @media screen and (max-width: 576px) {
 
     /* ======= Common ======= */
@@ -16,25 +624,48 @@
         }
     }
 
+    .header-title {
+        font-size: 2.5rem;
+    }
+
+    /* ======= Header ======= */
+    .navbar {
+        .navbar-toggler {
+            border: none;
+
+            img {
+                width: 25px;
+            }
+        }
+    }
+
+    .navbar-brand img {
+        width: 45px;
+    }
+
     /* ======= Home Page ======= */
+    #home-page {
+        height: 100vh;
+    }
+
     .home-page-wrapper {
-        padding: 0 1rem;
+        padding: 0 0.7rem;
 
         h1 {
-            font-size: 26px;
+            font-size: 26px !important;
         }
 
         h3 {
-            font-size: 19px;
+            font-size: 18px;
         }
 
         h4 {
-            font-size: 23px;
+            font-size: 22px !important;
         }
 
         p {
             width: 100%;
-            text-align: left;
+            font-size: 16px;
         }
     }
 
@@ -53,7 +684,8 @@
 
             img {
                 width: 100%;
-                height: 350px;
+                height: 100%;
+                margin-bottom: 2rem;
             }
         }
     }
@@ -64,31 +696,29 @@
     }
 
     .skill-page-wrapper {
-        height: 100%;
-        padding-top: 5rem;
+        padding-top: 3rem;
         padding-bottom: 2rem;
 
-        section {
-            justify-content: center;
-        }
-
         .skill-card {
-            margin: 10px 0 10px 0;
-            width: 20rem;
+            margin: 0 0 0 0;
+            margin-bottom: 10px;
+            width: 100%;
         }
     }
 
     /* ======= Project Page ======= */
     #project-page {
+        width: 100%;
         height: auto;
     }
 
     .project-page-wrapper {
-        padding-top: 5rem;
+        padding-top: 3rem;
         padding-bottom: 2rem;
 
         .project-card {
-            height: 300px !important;
+            width: 100%;
+            height: 250px !important;
 
             &:nth-child(odd) {
                 margin-left: 0;
@@ -98,38 +728,31 @@
                 margin-right: 0;
             }
 
+            .odd,
+            .even {
+                display: none;
+            }
+
             .project-card-body {
-                padding: 7rem 1rem !important;
+                color: var(--project-text-color);
+                position: relative;
+                z-index: 1;
+                padding: 2rem 1rem;
 
                 h2 {
-                    font-size: 28px;
+                    font-size: 30px;
                 }
 
-                .odd,
-                .even {
-                    display: none;
+                p {
+                    font-size: 18px;
+                    letter-spacing: 1px;
                 }
             }
         }
     }
 
-    /* ======= Contact Page ======= */
-    #contact-page {
-        width: 100%;
-        height: auto;
-    }
-
-    .contact-page-wrapper {
-        padding-top: 5rem;
-        padding-bottom: 2rem;
-    }
-
     /* ======= Project Details Page ======= */
     .project-details-page-wrapper {
-        height: 100%;
-        padding-top: 5.5rem;
-        padding-bottom: 2rem;
-
         .small-description-section {
             align-items: flex-start;
             flex-direction: column;
@@ -147,6 +770,12 @@
             }
         }
 
+        .project-image {
+            img {
+                height: 250px;
+            }
+        }
+
         .project-introduction {
             p {
                 width: 100%;
@@ -154,33 +783,15 @@
         }
 
         .project-description {
-            display: flex;
             flex-direction: column;
 
-            p {
-                font-size: 18px;
-                letter-spacing: 1px;
-                text-align: justify;
-            }
-
             section {
-                width: 100%;
-            }
-
-            .image {
-                width: 100%;
-            }
-        }
-
-        .project-design {
-            img {
                 width: 100%;
             }
         }
     }
 }
 
-/* ======= 768px ======= */
 @media screen and (max-width: 768px) {
 
     /* ======= Common ======= */
@@ -198,25 +809,29 @@
         }
     }
 
+    /* ======= Header ======= */
+    .navbar-brand img {
+        width: 50px;
+    }
+
     /* ======= Home Page ======= */
+    #home-page {
+        height: 100vh;
+    }
+
     .home-page-wrapper {
-        padding: 0 1rem;
+        padding: 0 0.7rem;
 
         h1 {
-            font-size: 26px;
-        }
-
-        h3 {
-            font-size: 19px;
+            font-size: 46px;
         }
 
         h4 {
-            font-size: 23px;
+            font-size: 40px;
         }
 
         p {
             width: 100%;
-            text-align: left;
         }
     }
 
@@ -227,14 +842,16 @@
 
     .about-page-wrapper {
         flex-direction: column;
-        padding-top: 3rem;
+        padding-top: 4rem;
         padding-bottom: 2rem;
 
         section {
             width: 100%;
 
             img {
+                width: 400px;
                 height: 400px;
+                margin-bottom: 2rem;
             }
         }
     }
@@ -245,8 +862,7 @@
     }
 
     .skill-page-wrapper {
-        height: 100%;
-        padding-top: 5rem;
+        padding-top: 3rem;
         padding-bottom: 2rem;
 
         section {
@@ -254,22 +870,21 @@
         }
 
         .skill-card {
-            margin: 10px 0 10px 0;
+            margin-bottom: 1rem;
             width: 20rem;
         }
     }
 
     /* ======= Project Page ======= */
     #project-page {
+        width: 100%;
         height: auto;
     }
 
     .project-page-wrapper {
-        padding-top: 5rem;
-        padding-bottom: 2rem;
-
         .project-card {
-
+            width: 100%;
+            height: 450px;
 
             &:nth-child(odd) {
                 margin-left: 0;
@@ -279,38 +894,15 @@
                 margin-right: 0;
             }
 
-            .project-card-body {
-                padding: 2rem 1rem;
-
-                h2 {
-                    font-size: 28px;
-                }
-
-                .odd,
-                .even {
-                    display: none;
-                }
+            .odd,
+            .even {
+                display: none;
             }
         }
     }
 
-    /* ======= Contact Page ======= */
-    #contact-page {
-        width: 100%;
-        height: auto;
-    }
-
-    .contact-page-wrapper {
-        padding-top: 5rem;
-        padding-bottom: 2rem;
-    }
-
     /* ======= Project Details Page ======= */
     .project-details-page-wrapper {
-        height: 100%;
-        padding-top: 5.5rem;
-        padding-bottom: 2rem;
-
         .small-description-section {
             align-items: flex-start;
             flex-direction: column;
@@ -328,6 +920,12 @@
             }
         }
 
+        .project-image {
+            img {
+                height: 100%;
+            }
+        }
+
         .project-introduction {
             p {
                 width: 100%;
@@ -335,36 +933,17 @@
         }
 
         .project-description {
-            display: flex;
             flex-direction: column;
 
-            p {
-                font-size: 18px;
-                letter-spacing: 1px;
-                text-align: justify;
-            }
-
             section {
-                width: 100%;
-            }
-
-            .image {
-                width: 100%;
-            }
-        }
-
-        .project-design {
-            img {
                 width: 100%;
             }
         }
     }
 }
 
-/* ======= 992px ======= */
 @media screen and (max-width: 992px) {
 
-
     /* ======= Common ======= */
     .social-link {
         display: none;
@@ -381,8 +960,24 @@
     }
 
     /* ======= Home Page ======= */
+    #home-page {
+        height: 100vh;
+    }
+
     .home-page-wrapper {
-        padding: 0 1rem;
+        padding: 0 9rem;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h4 {
+            font-size: 45px;
+        }
+
+        p {
+            width: 90%;
+        }
     }
 
     /* ======= About Page ======= */
@@ -391,14 +986,28 @@
     }
 
     .about-page-wrapper {
-        padding-top: 3rem;
+        flex-direction: column;
+        padding-top: 4rem;
         padding-bottom: 2rem;
 
         section {
             width: 100%;
 
             img {
-                height: 500px;
+                width: 400px;
+                height: 400px;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                width: 80%;
+            }
+
+            &:nth-child(2) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
@@ -409,200 +1018,46 @@
     }
 
     .skill-page-wrapper {
-        height: 100%;
-        padding-top: 5rem;
-        padding-bottom: 2rem;
-
-        section {
-            justify-content: center;
-        }
-
-        .skill-card {
-            margin: 5px;
-            width: 20rem;
-        }
-    }
-
-    /* ======= Project Page ======= */
-    #project-page {
-        height: auto;
-    }
-
-    .project-page-wrapper {
-        padding-top: 5rem;
-        padding-bottom: 2rem;
-
-        .project-card {
-            width: 100%;
-            height: 360px;
-
-            &:nth-child(odd) {
-                margin-left: 0;
-            }
-
-            &:nth-child(even) {
-                margin-right: 0;
-            }
-
-            .project-card-body {
-                color: var(--project-text-color);
-                position: relative;
-                z-index: 1;
-                padding: 10.5rem 3rem;
-
-                h2 {
-                    font-size: 28px;
-                }
-            }
-        }
-    }
-
-    /* ======= Project Details Page ======= */
-    .project-details-page-wrapper {
-        height: 100%;
-        padding-top: 5.5rem;
-        padding-bottom: 2rem;
-
-        .project-description {
-
-
-            section {
-                width: 100%;
-            }
-
-            .image {
-                width: 100%;
-            }
-        }
-
-        .project-design {
-            img {
-                width: 100%;
-            }
-        }
-    }
-
-}
-
-/* ======= 1200px ======= */
-@media screen and (max-width: 1200px) {
-
-
-    /* ======= Common ======= */
-    .social-link {
-        display: none;
-    }
-
-    .footer-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        a {
-            display: flex;
-        }
-    }
-
-    /* ======= Home Page ======= */
-    .home-page-wrapper {
-        padding: 0 1rem;
-    }
-
-    /* ======= About Page ======= */
-    #about-page {
-        height: auto;
-    }
-
-    .about-page-wrapper {
         padding-top: 3rem;
         padding-bottom: 2rem;
 
         section {
-            width: 100%;
-
-            img {
-                height: 500px;
-            }
-        }
-    }
-
-    /* ======= Skill Page ======= */
-    #skill-page {
-        height: auto;
-    }
-
-    .skill-page-wrapper {
-        height: 100%;
-        padding-top: 5rem;
-        padding-bottom: 2rem;
-
-        section {
             justify-content: center;
         }
 
         .skill-card {
-            margin: 5px;
+            margin-bottom: 1rem;
             width: 20rem;
         }
     }
 
     /* ======= Project Page ======= */
-    #project-page {
-        height: auto;
-    }
-
     .project-page-wrapper {
-        padding-top: 5rem;
-        padding-bottom: 2rem;
-
         .project-card {
-            width: 100%;
-            height: 360px;
+            width: 650px;
+            height: 450px;
+            position: relative;
+            cursor: pointer;
+            margin-bottom: 4rem;
 
             &:nth-child(odd) {
-                margin-left: 0;
+                margin-left: -5rem;
             }
 
             &:nth-child(even) {
-                margin-right: 0;
+                margin-right: -5rem;
             }
 
-            .project-card-body {
-                color: var(--project-text-color);
-                position: relative;
-                z-index: 1;
-                padding: 10.5rem 3rem;
+            #yes {
+                float: right;
+                text-align: right;
+            }
 
-                h2 {
-                    font-size: 28px;
-                }
+            .even {
+                margin: -5.5rem -20rem;
             }
         }
     }
-
-    /* ======= Project Details Page ======= */
-    .project-details-page-wrapper {
-        height: 100%;
-        padding-top: 5.5rem;
-        padding-bottom: 2rem;
-
-        .project-description {
-
-
-            section {
-                width: 100%;
-            }
-
-            .image {
-                width: 100%;
-            }
-        }
-
-        .project-design {
-            img {
-                width: 100%;
-            }
-        }
-    }
-
 }
+
+// @media screen and (max-width: 1200px) {}

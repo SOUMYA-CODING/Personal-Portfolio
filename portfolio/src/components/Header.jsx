@@ -69,14 +69,14 @@ const ProjectHeader = () => {
     const location = useLocation()
     const path = location.pathname
 
-    const [nav, setNav] = useState("")
+    const [nav, setNav] = useState(null)
 
     useEffect(() => {
-        navList();
-    }, [nav])
+        navList()
+    })
 
     const navList = () => {
-        if (path === "/") {
+        if (path == "/") {
             const data = default_nav_link.map((list) => {
                 return (
                     <li className="nav-item">
