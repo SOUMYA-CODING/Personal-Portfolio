@@ -36,6 +36,8 @@ const ProjectHeader = () => {
         })
     });
 
+
+    // Nav items to render in home page
     const default_nav_link = [
         {
             name: "Home",
@@ -59,6 +61,7 @@ const ProjectHeader = () => {
         }
     ]
 
+    // Nav items to render in Project Page
     const project_nav_link = [
         {
             name: "Home",
@@ -71,10 +74,14 @@ const ProjectHeader = () => {
 
     const [nav, setNav] = useState(null)
 
+
+    // Without using useEffect useState was not changing the data
+    // Useeffect for nav-items
     useEffect(() => {
         navList()
-    })
+    }, [nav]) // when giving dependency [nav] giving error, without giving dependency means living blank [] then no error occurs but nav-item do not change when going to other page in [] blank dependency. i have to refresh then the items changes
 
+    // Condition when path is "/" the render home page navbar items
     const navList = () => {
         if (path == "/") {
             const data = default_nav_link.map((list) => {
