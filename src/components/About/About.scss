@@ -1,0 +1,146 @@
+#about-page {
+    width: 100%;
+    height: 100vh;
+}
+
+.about-page-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    section {
+        width: 50%;
+
+        &:nth-child(1) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    img {
+        width: 70%;
+        border: 5px solid #FFF;
+    }
+
+    p {
+        color: #FFF;
+        font-size: 18px;
+        letter-spacing: 0.7px;
+        text-align: justify;
+    }
+
+    a {
+        text-decoration: none;
+        width: 130px;
+        padding: .6rem 1.2rem;
+        color: #FFF;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 1px;
+
+        &:nth-child(1) {
+            background: #EF3A37;
+            background: -webkit-linear-gradient(to right, #F06148, #EF3A37);
+            background: linear-gradient(to left, #F06148, #EF3A37);
+            box-shadow: inset 0 0 0 0 #1F4474;
+            transition: ease-out 0.5s;
+
+            &:hover {
+                box-shadow: inset 130px 0 0 0 #1F4474;
+            }
+        }
+
+        &:nth-child(2) {
+            border: 1px solid #EF3A37;
+            box-shadow: inset 0 0 0 0 #1F4474;
+            transition: ease-out 0.5s;
+            color: #FFF;
+
+            &:hover {
+                border: 1px solid #1F4474;
+                box-shadow: inset 130px 0 0 0 #1F4474;
+                color: #FFF;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #about-page {
+        height: auto;
+    }
+
+    .about-page-wrapper {
+        flex-direction: column;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        section {
+            width: 100%;
+
+            &:nth-child(2) {
+                margin-top: 2rem;
+                width: 80%;
+            }
+        }
+
+        img {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #about-page {
+        height: auto;
+    }
+
+    .about-page-wrapper {
+        flex-direction: column;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        section {
+            width: 100%;
+
+            &:nth-child(2) {
+                margin-top: 2rem;
+                width: 100%;
+            }
+        }
+
+        img {
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #about-page {
+        height: auto;
+    }
+
+    .about-page-wrapper {
+        flex-direction: column;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        section {
+            width: 100%;
+
+            &:nth-child(2) {
+                margin-top: 2rem;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}

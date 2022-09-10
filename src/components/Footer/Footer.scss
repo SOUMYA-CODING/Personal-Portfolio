@@ -1,0 +1,42 @@
+footer {
+    .footer-icons {
+        a {
+            display: none;
+            color: #FFF;
+            font-size: 1.6rem;
+            margin: 1rem;
+
+            i:hover {
+                color: #FF416C;
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #FF416C;
+        letter-spacing: 1.3px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer {
+        .footer-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                display: flex;
+            }
+        }
+
+        display: flex;
+        flex-direction: column;
+    }
+}

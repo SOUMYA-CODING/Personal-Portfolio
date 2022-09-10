@@ -1,0 +1,41 @@
+.social-link {
+    position: fixed;
+    left: 3rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+
+    .social-icon {
+        position: relative;
+
+        section {
+            position: absolute;
+            right: 0;
+            left: 0;
+            margin: -12.7rem -0.9rem;
+
+            a {
+                color: #FFF;
+                font-size: 1.6rem;
+                margin: 2rem 0;
+            }
+
+            i:hover {
+                color: #EF3A37;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .social-link {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .social-link {
+        display: none;
+    }
+}

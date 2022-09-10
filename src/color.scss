@@ -1,0 +1,83 @@
+/* ========== Base Color ========== */
+:root {
+    --color-1: #1C1D25;
+    --color-2: #111;
+    --color-3: #FFF;
+    --color-4: #EF3A37;
+    --color-5: #F06148;
+    --color-6: #B0B2C3;
+    --color-7: #233467;
+    --color-8: #1D2132;
+    --color-9: #293B59;
+    --color-10: #7D7D7D;
+    --color-11: #F3F3F3;
+    --color-12: #FFA500;
+    --color-13: #FF416C;
+    --color-14: #494949;
+    --color-15: #1F4474;
+    --color-16: #4169E1;
+    --color-17: #141E30;
+    --color-18: #243B55;
+    --color-19: #4C4F65;
+    --color-20: #EBEBEB;
+
+    /* ========== Default Color Base ========== */
+    --background-color: var(--color-1);
+
+    /* ========== Text Color ========== */
+    --text-color: var(--color-3);
+
+    /* ========== For Navbar ========== */
+    --navbar-text: var(--color-6);
+    --navbar-hover-color: var(--color-13);
+    --navbar-shadow-color: rgba(28, 29, 37, 0.9);
+}
+
+/*
+// ======= Background Color ======= //
+--background-color: var(--color-1);
+background-color: var(--background-color);
+
+// ======= Text Color ======= //
+--text-color: var(--color-3);
+
+// ======= Header Title Color ======= //
+--header-title-color: var(--color-11);
+
+// ======= Text Highlight Color ======= //
+--text-highlight-color: var(--color-13);
+
+// ======= For Navbar Color ======= //
+--navbar-text-color: var(--color-6);
+--navbar-svg-color: var(--color-4);
+--navbar-hover-color: var(--color-13);
+--navbar-shadow-color: rgba(28, 29, 37, 0.9);
+
+// ======= For Home Color ======= //
+--home-text-color: var(--text-color);
+
+// ======= For Button Color ======= //
+--button-color: var(--color-4);
+--button-text-color: var(--color-3);
+--button-graident-color: var(--color-5);
+--button-hover-color: var(--color-15);
+
+
+// ======= For Skill Card Color ======= //
+--skill-card-background-color: var(--color-11);
+--skill-card-hover-color: var(--color-13);
+
+// ======= For Project Card Color ======= //
+--project-card-background-color: var(--color-17);
+--project-card-hover-color: var(--color-18);
+--project-text-color: var(--color-3);
+
+// ======= For Form Color ======= //
+--form-text-color: var(--color-14);
+
+// ======= For Mouse Color ======= //
+--mouse-color: var(--text-color);
+
+// ======= Project Details Color ======= //
+--project-page-text-color: var(--text-color);
+--project-page-background-color: var(--color-19);*/

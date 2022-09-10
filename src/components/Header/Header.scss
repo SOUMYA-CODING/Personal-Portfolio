@@ -1,0 +1,50 @@
+.navbar-brand {
+    img {
+        width: 50px;
+    }
+}
+
+.navbar {
+    z-index: 1000;
+    background-color: rgba($color: #1C1D25, $alpha: 0.9);
+
+    .navbar-toggler {
+        border: none;
+
+        img {
+            width: 30px;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .nav-item {
+        margin: 0.3rem;
+
+        .nav-link {
+            position: relative;
+            color: #B0B2C3;
+            letter-spacing: .5px;
+            cursor: pointer;
+            font-size: 19px;
+            padding-bottom: 0px;
+
+            &::after {
+                position: absolute;
+                content: '';
+                height: 3.5px;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                transition: 0.5s;
+            }
+
+            &:hover::after {
+                width: 100%;
+                background-color: #FF416C;
+            }
+        }
+    }
+}

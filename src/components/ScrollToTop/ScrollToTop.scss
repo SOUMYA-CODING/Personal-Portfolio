@@ -1,0 +1,22 @@
+.scrolltotop {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    transition: ease-in-out 0.5;
+    z-index: 1000;
+    display: none;
+
+    button {
+        padding: 8px 15px;
+        color: #FFF;
+        background: #EF3A37;
+        background: -webkit-linear-gradient(to right, #F06148, #EF3A37);
+        background: linear-gradient(to left, #F06148, #EF3A37);
+        border: none;
+        border-radius: 3px;
+
+        &:hover {
+            box-shadow: 0px 0px 3px 0px #EF3A37;
+        }
+    }
+}
