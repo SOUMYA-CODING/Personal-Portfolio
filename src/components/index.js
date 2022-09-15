@@ -9,3 +9,5 @@ export { default as Footer } from './Footer/Footer'
 
 export { default as Socialicons } from './Socialicons/Socialicons'
 export { default as ScrollToTop } from './ScrollToTop/ScrollToTop'
+
+export { default as Error } from './Error/Error'

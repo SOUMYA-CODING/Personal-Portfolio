@@ -24,7 +24,7 @@ const Skill = () => {
                         whileInView={{ x: 0, opacity: 1 }}
                         viewport={{ once: false }}
                         transition={{ delay: 0.1, duration: 1, type: 'tween', ease: "easeInOut" }}
-                        className='header-title'>
+                        className="header-title">
                         My Skills
                     </motion.h3>
                     <motion.section
