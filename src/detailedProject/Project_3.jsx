@@ -58,7 +58,7 @@ const Project_3 = () => {
                                 unique homes and experiences around the world all made possible by Hosts on Airbnb.
                             </p>
 
-                            <a href="https://github.com/SNH-CODING/Ecommerce-For-Artsians" rel="noopener noreferrer" target='_blank' className='mt-3'>
+                            <a href="https://github.com/SNH-CODING/airbnb-clone" rel="noopener noreferrer" target='_blank' className='mt-3'>
                                 View Code
                                 <svg class="btn-arrow" width="42" height="24" viewBox="0 0 62 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
