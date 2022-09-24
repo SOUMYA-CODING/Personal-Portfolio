@@ -1,4 +1,4 @@
 # Personal-Portfolio
 Personal Portfolio
 
-![image](https://github.com/SNH-CODING/Personal-Portfolio/blob/main/portfolio/public/assets/projects/Portfolio.png)
+![image](https://github.com/SNH-CODING/Personal-Portfolio/blob/main/public/assets/profile/portfolio-image.png)
