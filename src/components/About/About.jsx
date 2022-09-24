@@ -1,27 +1,15 @@
 import React from 'react'
 import './About.scss'
 
-import { motion } from 'framer-motion'
-
 const About = () => {
     return (
         <>
             <section id="about-page">
                 <div className="about-page-wrapper container">
-                    <motion.section
-                        initial={{ opacity: 0, x: -300 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: false }}
-                        transition={{ delay: 0.1, duration: 1, type: 'tween', ease: "easeInOut" }}
-                    >
+                    <section>
                         <img src="assets/profile/profile_image.png" alt="Soumya Prakash Sahu | Profile" />
-                    </motion.section>
-                    <motion.section
-                        initial={{ opacity: 0, x: -300 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: false }}
-                        transition={{ delay: 0.3, duration: 1, type: 'tween', ease: "easeInOut" }}
-                    >
+                    </section>
+                    <section>
                         <h3 className='header-title'>
                             About me.
                         </h3>
@@ -38,11 +26,11 @@ const About = () => {
                             <a href="#contact-page" className='me-2'>
                                 Hire Me
                             </a>
-                            <a href="https://drive.google.com/file/d/1lGbYQ8LP3BFfEbyYfFLPJso-molTuzEW/view?usp=sharing" rel="noopener noreferrer" target="_blank">
+                            <a href="https://drive.google.com/file/d/1TkCHpkq4uGIVIdpnixD-LODtbuZ2b7ag/view?usp=sharing" rel="noopener noreferrer" target="_blank">
                                 Resume
                             </a>
                         </div>
-                    </motion.section>
+                    </section>
                 </div>
             </section>
         </>

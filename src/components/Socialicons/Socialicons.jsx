@@ -1,14 +1,9 @@
 import React from 'react'
 import './Socialicons.scss'
 
-import { motion } from 'framer-motion'
-
 const Socialicons = () => {
     return (
-        <motion.section
-            initial={{ y: 500, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3, duration: 1.3, type: 'tween', ease: "easeInOut" }}
+        <section
             className="social-link">
             <img id="arrow" src="assets/icons/light_arrow.png" alt="" />
             <div className="social-icon">
@@ -21,7 +16,7 @@ const Socialicons = () => {
                     <a href="https://dev.to/soumyaprakashsahu" rel="noopener noreferrer" target="_blank"><i className="fa-brands fa-dev"></i></a>
                 </section>
             </div>
-        </motion.section>
+        </section>
     )
 }
 

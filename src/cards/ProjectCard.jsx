@@ -1,16 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { motion } from 'framer-motion'
-
 const ProjectCard = (props) => {
     return (
-        <motion.div
-            initial={{ opacity: 0, x: -300 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
-            transition={{ delay: 0.2, duration: 1, type: 'tween', ease: "easeIn", staggerChildren: 0.3 }}
-
+        <div
             className='project-card' key={props.id}>
             <img className='card-img' src={props.image} alt={props.description} />
             <div className='card-img-overlay'>
@@ -29,7 +22,7 @@ const ProjectCard = (props) => {
                     <h1 className={props.number}>{props.sl_number}</h1>
                 </div>
             </div>
-        </motion.div>
+        </div>
     )
 }
 

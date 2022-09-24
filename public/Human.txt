@@ -8,7 +8,7 @@
 
 Soumya Prakash Sahu 
 Full Stack Developer
-https://soumyasahu.netlify.app/
+http://soumyasahu.vercel.app/
 
 ______________________________________________________________________________
 
@@ -19,8 +19,8 @@ ___________           .__
   |____| \____/ \____/|____/____  >
                                 \/ 
 
-Figma
-uigradients.com
+- Figma
+- uigradients.com
 
 ______________________________________________________________________________
 
@@ -36,5 +36,4 @@ ___________           .__                  .__
 - Sass
 - Boostrap 5.1
 - JavaScript
-- React 
-- Framer Motion  
+- React  

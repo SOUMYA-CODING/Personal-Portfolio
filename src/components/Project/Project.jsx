@@ -4,11 +4,10 @@ import './Project.scss'
 import ProjectCard from '../../cards/ProjectCard'
 import ProjectData from '../../data/ProjectData'
 
-import { motion } from 'framer-motion'
-
 const Project = () => {
     const data = ProjectData.map((list) => {
         return <ProjectCard
+            key={list.id}
             id={list.id}
             title={list.title}
             description={list.description}
@@ -24,12 +23,7 @@ const Project = () => {
         <>
             <section id="project-page">
                 <div className='project-page-wrapper container'>
-                    <motion.h3
-                        initial={{ x: -300, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        viewport={{ once: false }}
-                        transition={{ delay: 0.1, duration: 1, type: 'tween', ease: "easeInOut" }}
-                        className="header-title">Latest Work</motion.h3>
+                    <h3 className="header-title">Latest Work</h3>
                     <section className="my-5">
                         {data}
                     </section>

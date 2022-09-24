@@ -1,32 +1,10 @@
 import React from 'react'
 import './Home.scss'
 
-import { motion } from 'framer-motion'
-
-const container = {
-    hidden: {
-        y: -1000,
-        opacity: 0
-    },
-    show: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            delay: 0.3,
-            duration: 1.3,
-            type: "tween",
-            ease: "easeInOut",
-        }
-    }
-}
-
 const Home = () => {
     return (
         <>
-            <motion.section
-                initial={{ y: -1000, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.3, duration: 1.3, type: 'tween', ease: "easeInOut" }}
+            <section
 
                 id="home-page">
                 <div className="home-page-wrapper container">
@@ -59,7 +37,7 @@ const Home = () => {
                         </div>
                     </section>
                 </div>
-            </motion.section>
+            </section>
         </>
     )
 }

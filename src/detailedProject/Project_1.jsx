@@ -1,17 +1,11 @@
 import React from 'react'
 import './DetailedProject.scss'
 
-import { motion } from 'framer-motion'
-
 const Project_1 = () => {
     return (
         <>
             <section id='project-details-page'>
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1.5, duration: 1, ease: "easeInOut" }}
-
+                <div
                     className="project-details-wrapper">
                     <div className='container'>
                         {/* Tech */}
@@ -98,7 +92,7 @@ const Project_1 = () => {
                             <img src="assets/project-1/guest_house-3.png" alt="" />
                         </section>
                     </div>
-                </motion.div>
+                </div>
             </section>
         </>
     )

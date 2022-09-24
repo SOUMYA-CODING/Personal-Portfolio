@@ -30,7 +30,7 @@ const Project_2 = () => {
                                 <span className='description'>
                                     <strong>COMPLETION TIME :</strong>
                                     <br />
-                                    <p>Under Progress</p>
+                                    <p>Under Development</p>
                                 </span>
                             </span>
 

@@ -2,16 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Header.scss'
 
-import { motion } from 'framer-motion'
-
 const Header_1 = () => {
     return (
         <>
-            <motion.header
-                initial={{ y: -300, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.3, duration: 1.3, type: 'tween', ease: "easeInOut" }}
-            >
+            <header>
                 <nav className="navbar navbar-expand-lg fixed-top">
                     <div className="container">
                         <Link className="navbar-brand" to="/">
@@ -41,7 +35,7 @@ const Header_1 = () => {
                         </div>
                     </div>
                 </nav>
-            </motion.header>
+            </header>
         </>
     )
 }

@@ -4,11 +4,10 @@ import './Skill.scss'
 import SkillCard from '../../cards/SkillCard'
 import SkillData from '../../data/SkillsData'
 
-import { motion } from 'framer-motion'
-
 const Skill = () => {
     const data = SkillData.map((list) => {
         return <SkillCard
+            key={list.id}
             id={list.id}
             icon={list.icon}
             title={list.title}
@@ -19,22 +18,14 @@ const Skill = () => {
         <>
             <section id="skill-page">
                 <div className="skill-page-wrapper container">
-                    <motion.h3
-                        initial={{ x: -300, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        viewport={{ once: false }}
-                        transition={{ delay: 0.1, duration: 1, type: 'tween', ease: "easeInOut" }}
+                    <h3
                         className="header-title">
                         My Skills
-                    </motion.h3>
-                    <motion.section
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ staggerChildren: 0.5 }}
-                        viewport={{ once: false }}
+                    </h3>
+                    <section
                         className='my-5'>
                         {data}
-                    </motion.section>
+                    </section>
                 </div>
             </section>
         </>
