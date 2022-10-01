@@ -34,7 +34,7 @@ export default [
     //     sl_number: "04",
     //     title: "Tourism App",
     //     description: "A travel and tourism app",
-    //     // image: "assets/project-4/ecommerce_artisans-1.png",
+    //     image: "assets/project-4/tourism-1.png",
     //     is_shift: "yes",
     //     number: "even",
     //     link: "/p4"
