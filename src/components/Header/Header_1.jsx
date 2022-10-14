@@ -22,9 +22,9 @@ const Header_1 = () => {
                                 <li className="nav-item">
                                     <a href='#about-page' className='nav-link'>About me</a>
                                 </li>
-                                {/* <li className="nav-item">
+                                <li className="nav-item">
                                     <a href='#experience-page' className='nav-link'>Experience</a>
-                                </li> */}
+                                </li>
                                 <li className="nav-item">
                                     <a href='#skill-page' className='nav-link'>Skills</a>
                                 </li>

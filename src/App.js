@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header_1, Header_2, Home, About, Skill, Project, Contact, Socialicons, ScrollToTop, Footer, Error } from './components';
+import { Header_1, Header_2, Home, About, Experience, Skill, Project, Contact, Socialicons, ScrollToTop, Footer, Error } from './components';
 import { Project_1, Project_2, Project_3, Project_4 } from './detailedProject';
 import AutoScroll from './AutoScroll'
 import { Route, Routes } from 'react-router-dom';
@@ -15,6 +15,7 @@ function App() {
           <Header_1 />
           <Home />
           <About />
+          <Experience />
           <Skill />
           <Project />
           <Contact />

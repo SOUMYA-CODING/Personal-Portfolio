@@ -1,11 +1,14 @@
 import React from 'react'
+import './Experience.scss'
 
 const Experience = () => {
     return (
         <>
-        <section id='experience-page'>
+            <section id='experience-page'>
+                <div className="experience-page-wrapper container">
 
-        </section>
+                </div>
+            </section>
         </>
     )
 }
